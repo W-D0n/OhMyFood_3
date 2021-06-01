@@ -1,0 +1,321 @@
+@charset "UTF-8";
+@import url("https://fonts.googleapis.com/css2?family=Roboto&family=Shrikhand&display=swap");
+html,
+body,
+p,
+ol,
+ul,
+li,
+dl,
+dt,
+dd,
+blockquote,
+figure,
+fieldset,
+legend,
+textarea,
+pre,
+iframe,
+hr,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin: 0;
+  padding: 0;
+  font-family: inherit;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-size: 100%;
+  font-weight: normal;
+}
+
+ol,
+ul,
+li {
+  list-style: none;
+}
+
+button,
+input,
+select {
+  margin: 0;
+}
+
+html {
+  box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
+img,
+video {
+  height: auto;
+  max-width: 100%;
+}
+
+iframe {
+  border: 0;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+td,
+th {
+  padding: 0;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+/*Valeurs communes à tout le site*/
+html {
+  font-family: Roboto, "sans-serrif";
+}
+
+.wrap {
+  max-width: 1440px;
+  /*Bg color de test à supprimer*/
+  margin: auto;
+}
+
+.bg-test {
+  background: #7a70ff;
+}
+
+.bg-test2 {
+  background: #ffa970;
+}
+
+.section__header {
+  font-weight: 800;
+  font-size: 1.5rem;
+}
+
+.resto__card {
+  display: block;
+  position: relative;
+  background: white;
+  max-height: 18rem;
+  border-radius: 1rem;
+}
+
+.resto__cardimgcontainer {
+  display: block;
+  border-radius: 1rem;
+  overflow: hidden;
+  height: 11rem;
+  border-radius: 1rem 1rem 0 0;
+}
+
+.resto__cardimg {
+  width: 100%;
+  object-fit: cover;
+}
+
+.resto__badge-new {
+  position: absolute;
+  top: 2rem;
+  right: 2rem;
+  padding: 0.5rem;
+  border-radius: 0.2rem;
+  background-color: #99e2d0;
+  color: #1b6150;
+}
+
+.card__footer {
+  display: flex;
+  padding: 0.5rem;
+}
+
+.card__footcontent {
+  flex: 1;
+}
+
+.card__likebtn {
+  display: flex;
+  align-items: center;
+}
+
+.likebtn {
+  font-size: 2rem;
+}
+
+.badge-new {
+  background-color: #98e2cf;
+  color: #1b5f4e;
+  position: absolute;
+  top: 1rem;
+  right: 1rem;
+  padding: 0.5rem;
+  border-radius: 0.2rem;
+}
+
+.btn {
+  border: 0;
+  border-radius: 100px;
+  padding: 1rem 1.5rem;
+  color: white;
+  font-size: 1rem;
+  font-weight: 500;
+  cursor: pointer;
+  background-color: #686868;
+  background-image: linear-gradient(#FF79DA, #9356DC);
+  box-shadow: 0.25rem 0.25rem 10px rgba(0, 0, 0, 0.25);
+}
+.btn:active {
+  transform: scale(0.99);
+}
+
+.header__logo {
+  box-shadow: 0 0 0.5rem rgba(0, 0, 0, 0.25);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  padding: 1rem 0;
+  height: 5rem;
+}
+
+.logo {
+  max-height: 2rem;
+}
+
+.header__location {
+  background: #ededed;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 1rem;
+  color: #292929;
+}
+
+.location__icon {
+  margin-right: 0.8rem;
+}
+
+.location {
+  font-weight: 500;
+}
+
+.hero {
+  text-align: center;
+}
+
+.nav {
+  background-color: whitesmoke;
+  padding: 2rem;
+}
+
+.nav__subtitle {
+  margin: 1rem 0;
+  font-weight: 400;
+  color: #292929;
+}
+
+.fctmt {
+  display: flex;
+  flex-direction: column;
+  padding: 2rem 1rem;
+}
+
+.fctmt__header {
+  text-align: start;
+}
+
+.fctmt__list {
+  position: relative;
+  list-style-type: none;
+  counter-reset: list__items;
+}
+
+.fctmt__list__items {
+  box-shadow: 0.25rem 0.25rem 0.5rem rgba(0, 0, 0, 0.125);
+  display: flex;
+  background-color: whitesmoke;
+  padding: 1.5rem;
+  margin: 1rem 0 1rem 0.75rem;
+  margin-bottom: 1rem;
+  border-radius: 1.25rem;
+}
+.fctmt__list__items::before {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  position: absolute;
+  counter-increment: list__items;
+  content: counter(list__items);
+  background-color: #9256dc;
+  height: 1.5rem;
+  width: 1.5rem;
+  left: -0.1rem;
+  border-radius: 100px;
+}
+.fctmt__list__items:active {
+  background-color: rgba(146, 86, 220, 0.2);
+}
+
+.fctmt__list__icon {
+  margin-right: 1rem;
+  color: #7e7e7e;
+}
+
+.resto {
+  display: grid;
+  background: whitesmoke;
+  grid-template-columns: 1fr;
+  row-gap: 1rem;
+  padding: 1rem;
+}
+
+.resto__header {
+  margin: 1.5rem 0;
+}
+
+.footer {
+  display: flex;
+  flex-direction: column;
+  padding: 1.5rem 2rem;
+  background-color: #383838;
+}
+
+.foot__header {
+  font-family: Shrikhand, "cursive";
+  font-size: 1.3rem;
+  margin-bottom: 1.2rem;
+  color: white;
+}
+
+.foot__links__list :first-child {
+  margin-top: 0;
+}
+
+.links__list__items {
+  margin: 0.5rem 0;
+  color: white;
+}
+
+.foot__icon {
+  width: 1.2rem;
+  margin-right: 0.5rem;
+}
+
+/*# sourceMappingURL=style.css.map */

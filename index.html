@@ -5,13 +5,11 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <script src="https://kit.fontawesome.com/a0526e87eb.js" crossorigin="anonymous"></script>
-    <link rel="stylesheet" href="./assets/scripts/main.css">
+    <link rel="stylesheet" href="./assets/scripts/style.css">
     <link rel="icon" sizes="144x144" href="assets/logo/oh.svg">
     <title>OhMyFood!</title>
 </head>
 <!-- Icone flèche vers la gauche <i class="far fa-arrow-left"></i> -->
-<!-- Icone couverts <i class="fas fa-utensils"></i> -->
-<!-- Icone mains serrées <i class="fas fa-hands-helping"></i> -->
 <!-- Icone coeur vide <i class="far fa-heart"></i> -->
 <!-- Icone coeur plein <i class="fas fa-heart"></i> -->
 <body>
@@ -55,80 +53,91 @@
         </ol>
       </section>
     </nav>
-    <main class="resto wrap bg-test">
-        <h1 class="resto__header"></h1>
+    <main class="wrap bg-test">
+      <section class="resto">
+        <h1 class="resto__header section__header">Restaurants</h1>
         <article class="resto__card cardwrapper">
-            <a href="#" class="resto__btn-new"><button class="resto__btn" type="button">Nouveau</button></a>
-            <a href="/palettedesgouts.html" class="resto__cardwrapcontainer">
-              <div class="resto__cardwrapimgcontainer">
-                  <!-- <img src="assets/img/1jay.jpg" src="https://via.placeholder.com/1000x934"alt="food in a plate" class="resto__cardwrapimg"> -->
-                  
-                  <!-- POUR LA PHASE DE TEST -->
-                  <img src="https://via.placeholder.com/300" alt="food in a plate" class="resto__cardwrapimg">
-              </div>
-              <header class="resto__cardwrapheader">
-                  <h2>La palette du goût</h2>
-              </header>
-                  <p class="resto__cardwrapcity">Ménilmontant</p>
-                  <em class="resto__cardwrapfavorite"></em>
-            </a>
-        </article>
-        <article class="resto__card cardwrapper">
-            <a href="#" class="resto__btn-new"><button class="resto__btn" type="button">Nouveau</button></a>
-            <a href="/noteenchantee.html" class="resto__cardwrapcontainer">
-              <div class="resto__cardwrapimgcontainer">
-                  <!-- <img src="assets/img/2stil.jpg" alt="food in a plate" class="resto__cardwrapimg"> -->
-
-                  <!-- POUR LA PHASE DE TEST -->
-                  <img src="https://via.placeholder.com/300" alt="food in a plate" class="resto__cardwrapimg">
-              </div>
-              <header class="resto__cardwrapheader">
-                  <h2>La note enchantée</h2>
-              </header>
-                  <p class="resto__cardwrapcity">Charonne</p>
-                  <em class="resto__cardwrapfavorite"></em>
-            </a>
-        </article>
-        <article class="resto__card cardwrapper">
-          <a href="#" class="resto__btn-new"><button class="resto__btn" type="button">Nouveau</button></a>
-          <a href="/alafrancaise.html" class="resto__cardwrapcontainer">
-            <div class="resto__cardwrapimgcontainer">
-                <!-- <img src="assets/img/3toa.jpg" alt="food in a plate" class="resto__cardwrapimg"> -->
-                <!-- POUR LE TEST -->
-                <img src="https://via.placeholder.com/300" alt="food in a plate" class="resto__cardwrapimg">
+          <span class="resto__badge-new">Nouveau</span>
+          <a href="/palettedesgouts.html" class="resto__cardwrapcontainer">
+            <div class="resto__cardimgcontainer">
+              <img src="assets/img/1jay.jpg" alt="food in a plate" class="resto__cardimg">  
             </div>
-            <header class="resto__cardwrapheader">
-                <h2>À la française</h2>
-            </header>
-                <p class="resto__cardwrapcity">Cité Rouge</p>
-                <em class="resto__cardwrapfavorite"></em>
+              <footer class="card__footer">
+                  <div class="card__footcontent">
+                    <h3 class="titre">La palette du goût</h3>
+                    <span class="city">Ménilmontant</span>
+                  </div>    
+                  <div class="card__likebtn">
+                    <i class="far fa-heart likebtn"></i>      
+                  </div> 
+              </footer>
           </a>
         </article>
         <article class="resto__card cardwrapper">
-          <a href="#" class="resto__btn-new"><button class="resto__btn" type="button">Nouveau</button></a>
-          <a href="/delicedessens.html" class="resto__cardwrapcontainer">
-            <div class="resto__cardwrapimgcontainer">
-                <!-- <img src="assets/img/4hansel.jpg" alt="food in a plate" class="resto__cardwrapimg"> -->
-                <!-- POUR LE TEST -->
-                <img src="https://via.placeholder.com/300" alt="food in a plate" class="resto__cardwrapimg">
+          <span class="resto__badge-new">Nouveau</span>
+          <a href="/palettedesgouts.html" class="resto__cardwrapcontainer">
+            <div class="resto__cardimgcontainer">
+              <img src="assets/img/2stil.jpg" alt="food in a plate" class="resto__cardimg">  
             </div>
-            <header class="resto__cardwrapheader">
-                <h2>Le délice des sens</h2>
-            </header>
-                <p class="resto__cardwrapcity">Folie-Méricourt</p>
-                <em class="resto__cardwrapfavorite"></em>
+              <footer class="card__footer">
+                  <div class="card__footcontent">
+                    <h3 class="titre">La palette du goût</h3>
+                    <span class="city">Ménilmontant</span>
+                  </div>    
+                  <div class="card__likebtn">
+                    <i class="far fa-heart likebtn"></i>      
+                  </div> 
+              </footer>
           </a>
         </article>
+        <article class="resto__card cardwrapper">
+          <a href="/palettedesgouts.html" class="resto__cardwrapcontainer">
+            <div class="resto__cardimgcontainer">
+              <img src="assets/img/3toa.jpg" alt="food in a plate" class="resto__cardimg">  
+            </div>
+              <footer class="card__footer">
+                  <div class="card__footcontent">
+                    <h3 class="titre">La palette du goût</h3>
+                    <span class="city">Ménilmontant</span>
+                  </div>    
+                  <div class="card__likebtn">
+                    <i class="far fa-heart likebtn"></i>      
+                  </div> 
+              </footer>
+          </a>
+        </article>
+        <article class="resto__card cardwrapper">
+          <a href="/palettedesgouts.html" class="resto__cardwrapcontainer">
+            <div class="resto__cardimgcontainer">
+              <img src="assets/img/4hansel.jpg" alt="food in a plate" class="resto__cardimg">  
+            </div>
+              <footer class="card__footer">
+                  <div class="card__footcontent">
+                    <h3 class="titre">La palette du goût</h3>
+                    <span class="city">Ménilmontant</span>
+                  </div>    
+                  <div class="card__likebtn">
+                    <i class="far fa-heart likebtn"></i>      
+                  </div> 
+              </footer>
+          </a>
+        </article>
+      </section>
+        
     </main>
-    <footer class="footer wrap bg-test">
+    <footer class="footer wrap">
       <h2 class="foot__header">
         ohmyfood
       </h2>
-      <ul class="foot__links">
-        <li><a class="" href="#"></a></li>
-        <li><a class="" href="#"></a></li>
-        <li><a href="#"></a></li>
-        <li><a href="#"></a></li>
+      <ul class="foot__links__list">
+        <li class="links__list__items">          
+          <a class="foot__links" href="#"><i class="fas fa-utensils foot__icon"></i>Proposer un restaurant</a>
+        </li>
+        <li class="links__list__items">          
+          <a class="foot__links" href="#"><i class="fas fa-hands-helping foot__icon"></i>Devenir partenaire</a>
+        </li>
+        <li class="links__list__items"><a class="foot__links" href="#">Mentions légales</a></li>
+        <li class="links__list__items"><a class="foot__links" href="#">Contact</a></li>
       </ul>
     </footer>
   </div>  
