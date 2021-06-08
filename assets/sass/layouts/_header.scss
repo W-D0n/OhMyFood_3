@@ -1,0 +1,39 @@
+//head
+.header__logo{
+    @include heading_shadow;
+    @include flex-center;
+    position: relative;
+    padding: 1rem 0;
+    height: 5rem;
+  }
+  .logo{
+    max-height: 2rem;
+  }
+  
+  .header__location{
+    background:$bg-grey-light;
+    @include flex-center;
+    padding: 1rem;
+    color: $fontcolor-tertiaire; 
+  }
+  .location__icon{
+    margin-right: 0.8rem;
+  }
+  .location{
+    font-weight: $medium;
+  }
+  //Hero
+  .hero{
+    text-align: center;
+  }
+  //nav
+  .nav{
+    background-color: $bg-grey-lighter;
+    padding: 2rem;
+  }
+  
+  .nav__subtitle{
+    margin: 1rem 0;
+    font-weight: $low;
+    color:$fontcolor-tertiaire;
+  }

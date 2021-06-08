@@ -1,0 +1,18 @@
+.header--backarrow{
+}
+[class$='-arrow-left']{ //utilisation du sélecteur d'attributs: ici je sélectionne l'élément de classe qui se termine par -arrow-left
+    background-color: red;
+}
+.hero_restauimg{
+    object-fit: cover;
+    max-height: 30rem;
+    max-width: 100%;
+    width: 100%;
+}
+.main_menu-container{
+    margin-top: -4rem;
+    background-color: $bg-grey-lighter;  
+    border-radius: 2rem 2rem 0 0;
+    z-index: 1;
+    position: relative;
+}

@@ -1,0 +1,20 @@
+//utilisation de @use + @forward (+_index.scss'
+@use './abstract';
+
+//utilisation précédente
+@import './base/_reset.scss';
+@import './abstract/_var.scss';
+@import './abstract/_mixins.scss';
+@import './abstract/_wrapper.scss';
+@import './base/_breakpoints.scss';
+@import './base/_cards.scss';
+@import './base/_typo.scss';
+@import './components/_btns.scss';
+@import './components/_loader.scss';
+@import './layouts/_header.scss';
+@import './layouts/_nav.scss';
+@import './layouts/_main.scss';
+@import './layouts/_footer.scss';
+
+@import './pages/_home.scss';
+@import './pages/_menus.scss';

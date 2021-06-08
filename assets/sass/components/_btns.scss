@@ -1,0 +1,17 @@
+//Style des boutons
+.btn{
+    border: 0;
+    border-radius: $btn-bord-radius;
+    padding: 1rem 1.5rem;
+    color: $fontcolor-primaire;
+    font-size: 1rem;
+    font-weight: $medium;
+    cursor: pointer;
+    background-color: #686868;
+    background-image: linear-gradient(#FF79DA,#9356DC);
+    box-shadow: 0.25rem 0.25rem 10px rgba(0, 0, 0, 0.25);
+      
+      &:active{
+        transform: scale(0.99);
+      }
+  }

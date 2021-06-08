@@ -92,32 +92,17 @@ html {
 
 .wrap {
   max-width: 1440px;
-  /*Bg color de test à supprimer*/
   margin: auto;
 }
 
-.bg-test {
-  background: #7a70ff;
-}
-
-.bg-test2 {
-  background: #ffa970;
-}
-
-.section__header {
-  font-weight: 800;
-  font-size: 1.5rem;
-}
-
-.resto__card {
+.restau__cardwrapper {
   display: block;
   position: relative;
   background: white;
-  max-height: 18rem;
   border-radius: 1rem;
 }
 
-.resto__cardimgcontainer {
+.restau__cardimgcontainer {
   display: block;
   border-radius: 1rem;
   overflow: hidden;
@@ -125,19 +110,9 @@ html {
   border-radius: 1rem 1rem 0 0;
 }
 
-.resto__cardimg {
+.restau__cardimg {
   width: 100%;
   object-fit: cover;
-}
-
-.resto__badge-new {
-  position: absolute;
-  top: 2rem;
-  right: 2rem;
-  padding: 0.5rem;
-  border-radius: 0.2rem;
-  background-color: #99e2d0;
-  color: #1b6150;
 }
 
 .card__footer {
@@ -151,6 +126,7 @@ html {
 
 .card__likebtn {
   display: flex;
+  justify-content: center;
   align-items: center;
 }
 
@@ -158,14 +134,24 @@ html {
   font-size: 2rem;
 }
 
-.badge-new {
-  background-color: #98e2cf;
-  color: #1b5f4e;
+.restau__badge-new {
   position: absolute;
   top: 1rem;
   right: 1rem;
   padding: 0.5rem;
   border-radius: 0.2rem;
+  background-color: #98e2cf;
+  color: #1b5f4e;
+}
+
+.section__header {
+  font-weight: 800;
+  font-size: 1.5rem;
+  margin: 1.5rem 0;
+}
+
+.restau__name {
+  font-family: Shrikhand, "cursive";
 }
 
 .btn {
@@ -278,16 +264,12 @@ html {
   color: #7e7e7e;
 }
 
-.resto {
+.main-container {
   display: grid;
   background: whitesmoke;
   grid-template-columns: 1fr;
   row-gap: 1rem;
   padding: 1rem;
-}
-
-.resto__header {
-  margin: 1.5rem 0;
 }
 
 .footer {
@@ -316,6 +298,25 @@ html {
 .foot__icon {
   width: 1.2rem;
   margin-right: 0.5rem;
+}
+
+[class$=-arrow-left] {
+  background-color: red;
+}
+
+.hero_restauimg {
+  object-fit: cover;
+  max-height: 30rem;
+  max-width: 100%;
+  width: 100%;
+}
+
+.main_menu-container {
+  margin-top: -4rem;
+  background-color: whitesmoke;
+  border-radius: 2rem 2rem 0 0;
+  z-index: 1;
+  position: relative;
 }
 
 /*# sourceMappingURL=style.css.map */

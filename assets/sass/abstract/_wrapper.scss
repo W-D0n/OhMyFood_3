@@ -1,0 +1,13 @@
+//Wrap global
+.wrap{
+    max-width: $maxwdth;
+    margin: auto;
+  }
+
+//Wrap des cards
+.restau__cardwrapper{
+    display: block;
+    position: relative;
+    background: $bg-primaire;
+    border-radius:$card-bord-radius;
+}

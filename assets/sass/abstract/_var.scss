@@ -1,0 +1,44 @@
+/*Valeurs communes à tout le site*/
+@import url('https://fonts.googleapis.com/css2?family=Roboto&family=Shrikhand&display=swap');
+
+//Polices de caractères
+$fontstyled:Shrikhand, 'cursive';
+$font-neutral:Roboto, 'sans-serrif';
+
+html{
+  font-family: $font-neutral;
+}
+
+//Radius
+$card-bord-radius:1rem;
+$badge-bord-radius:0.2rem;
+$btn-bord-radius:100px;
+
+//Dimensions
+$maxwdth:1440px;
+
+
+//Couleurs principales
+$primaire:hsla(267,66%,60%,1);
+$secondaire:hsla(317,100%,74%,1);
+$tertiaire:hsla(165,56%,74%,1);
+
+//Couleur utilitaires
+$hover_prim_color:hsla(267, 66%, 60%, 0.2);
+$btn-menu-anime:hsla(267,100%,96%,1);
+$fontcolor-primaire:hsla(0,0%,100%,1);
+$fontcolor-secondaire:hsla(0,0%,21%,1);
+$fontcolor-tertiaire:hsla(0,0%,16%,1);
+$fontcolor-badge-new:hsla(165,56%,24%,1);
+
+//Backgrounds
+$bg-primaire:hsla(0,0%,100%,1);
+$bg-grey-light:hsla(0,0%,93%,1);
+$bg-grey-lighter:hsla(0,0%,96%,1);
+$bg-foot:hsla(0,0%,22%,1);
+$bg-badge:hsla(165,56%,74%,1);
+
+//Graisse des font
+$gras:800;
+$medium:500;
+$low:400;

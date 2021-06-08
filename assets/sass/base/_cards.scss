@@ -1,0 +1,35 @@
+.restau__cardimgcontainer{
+  display: block;
+  border-radius:$card-bord-radius;
+  overflow: hidden;
+  height: 11rem;
+  border-radius:$card-bord-radius $card-bord-radius 0 0;
+}
+.restau__cardimg{
+  width:100%;
+  object-fit:cover;
+}
+.card__footer{
+  display:flex;
+  padding:0.5rem;  
+}
+.card__footcontent{
+  flex:1;
+}
+.card__likebtn{
+  @include flex-center;
+}
+.likebtn{
+  font-size:2rem;
+}
+
+//Badge NOUVEAU
+.restau__badge-new{
+  position:absolute;
+  top:1rem;
+  right:1rem;
+  padding:0.5rem;
+  border-radius:$badge-bord-radius;
+  background-color: $bg-badge;
+  color:$fontcolor-badge-new;
+}

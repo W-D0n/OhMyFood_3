@@ -1,0 +1,49 @@
+//Fonctionnement fctmt
+.fctmt{
+    display: flex;
+    flex-direction: column;
+    padding: 2rem 1rem;
+}
+.fctmt__header{
+text-align: start;
+}
+.fctmt__list{
+position: relative;
+list-style-type: none;
+counter-reset: list__items;
+}
+.fctmt__list__items{
+    @include shadow;
+    display: flex;
+    background-color: $bg-grey-lighter;
+    padding: 1.5rem;
+    margin:1rem 0 1rem 0.75rem;
+    margin-bottom: 1rem;
+    border-radius: 1.25rem;
+    
+    &::before{ //Affichage des puces numérotées devant les items de la liste.
+      @include flex-center;
+      color: $fontcolor-primaire;
+      position:absolute;
+      counter-increment: list__items;
+      content: counter(list__items);
+      background-color: $primaire;
+      height: 1.5rem;
+      width: 1.5rem;  
+      left: -0.1rem;
+      border-radius: 100px;
+    }
+    //ne l'appliquer qu'avec le format desk !
+    // &:hover{
+    //     background-color:$hover_prim_color;
+    // }
+    
+    &:active{
+        background-color:$hover_prim_color;
+    }
+
+}
+.fctmt__list__icon{
+    margin-right: 1rem;
+    color:#7e7e7e;
+}
