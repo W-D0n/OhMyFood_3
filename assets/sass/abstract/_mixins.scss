@@ -1,10 +1,8 @@
-@import '../base/breakpoints';
-
 @mixin heading_shadow {
-    box-shadow: 0 0 0.5rem rgba(0, 0, 0, 0.25);
+  box-shadow: 0 0 0.5rem rgba(0, 0, 0, 0.25);
 }
 @mixin shadow {
-    box-shadow: 0.25rem 0.25rem 0.5rem rgba(0, 0, 0, 0.125);
+  box-shadow: 0.25rem 0.25rem 0.5rem rgba(0, 0, 0, 0.125);
 }
 
 @mixin flex-center{
@@ -13,7 +11,28 @@
   align-items: center;
 }
 
+//quand le texte depasse, évite le wrap, cache le texte, affiche trois petits points
+@mixin ellipsis {
+	white-space: nowrap;
+	overflow: hidden;
+	text-overflow: ellipsis;
+}
+
 //Fonctions pour chaque breakpoints utiliser la valeur de la variable correspondante contenue dans la map $breakpoints
 @each $breakpoint, $value in $breakpoints {
-  
+ 
 }
+
+//CREER DES MIXINS POUR LES MEDIAQUERIES
+//Sup à 1024 jusqu'à 1920
+$media_desk_high-res:'only screen and (max-width: 1920px)';
+
+//Écrans à très faible réso
+$media_desk_mid-res:'only screen and (min-width: 921px) and (max-width: 1024px)';
+
+//Tab orientée en portrait (non paramétré)
+$media_tab-res:'only screen and (min-width: 601px) and (max-width: 920px)';
+
+//Réso des mobiles
+$media_mobile-res:'only screen and (max-width: 600px)';
+

@@ -1,146 +1,146 @@
 <!DOCTYPE html>
 <html lang="fr">
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <script src="https://kit.fontawesome.com/a0526e87eb.js" crossorigin="anonymous"></script>
-    <link rel="stylesheet" href="./assets/css/style.css">
-    <link rel="icon" sizes="144x144" href="assets/logo/oh.svg">
-    <title>OhMyFood!</title>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <script src="https://kit.fontawesome.com/a0526e87eb.js" crossorigin="anonymous"></script>
+  <link rel="stylesheet" href="./assets/css/style.css">
+  <link rel="icon" sizes="144x144" href="assets/logo/oh.svg">
+  <title>OhMyFood!</title>
 </head>
 <!-- Icone flèche vers la gauche <i class="fas fa-arrow-left"></i> -->
 <!-- Icone coeur vide <i class="far fa-heart"></i> -->
 <!-- Icone coeur plein <i class="fas fa-heart"></i> -->
 <body>
   <div class="wrap">
-    <header class="header wrap">
-      <div class="header__logo">
-        <img src="assets/logo/ohmyfood.svg" alt="logo oh my food" class="logo">
+  <header class="header">
+    <div class="header__logo">
+    <img src="assets/logo/ohmyfood.svg" alt="logo oh my food" class="logo">
+    </div>
+    <div class="header__location">
+    <em class="fas fa-map-marker-alt location__icon"></em>
+    <p class="location">Paris, Belleville</p>
+    </div>
+  </header>
+  <nav class="hero">
+    <section class="nav">
+    <h1 class="section__header">      
+      Réservez le menu qui vous convient
+    </h1>
+    <h2 class="nav__subtitle">
+      Découvrez des restaurans d'exception, séléctionnés par nos soins
+    </h2>
+    <button class="btn" type="button">Explorer nos restaurants</button>
+    </section>
+    <section class="fctmt">
+    <h1 class="fctmt__header section__header">
+      Fonctionnement
+    </h1>
+    <ol class="fctmt__list" type="1">
+      <li class="fctmt__list__items">
+      <i class="fas fa-mobile-alt fctmt__list__icon"></i>
+      <span>Choisissez un restaurant</span>
+      </li>
+      <li class="fctmt__list__items">
+      <i class="fas fa-list-ul fctmt__list__icon"></i>
+      <span>Composez votre menu</span>
+      </li>
+      <li class="fctmt__list__items">
+      <i class="fas fa-store fctmt__list__icon"></i>
+      <span>Dégustez au restaurant</span>
+      </li>
+    </ol>
+    </section>
+  </nav>
+  <main class="main-container">
+    <h1 class="section__header">Restaurants</h1>
+    
+    <article class="restau__cardwrapper"><!-- La palette des gouts -->
+      <span class="restau__badge-new">Nouveau</span>
+      <a href="/palettedesgouts.html" class="restau__cardwrapcontainer">
+      <div class="restau__cardimgcontainer">
+        <img src="assets/img/1jay.jpg" alt="food in a plate" class="restau__cardimg">  
       </div>
-      <div class="header__location">
-        <em class="fas fa-map-marker-alt location__icon"></em>
-        <p class="location">Paris, Belleville</p>
+        <footer class="card__footer">
+          <div class="card__footcontent">
+          <h3 class="titre">La palette du goût</h3>
+          <span class="city">Ménilmontant</span>
+          </div>  
+          <div class="card__likebtn">
+          <i class="far fa-heart likebtn"></i>    
+          </div> 
+        </footer>
+      </a>
+    </article>
+    
+    <article class="restau__cardwrapper"><!-- La note enchantee -->
+      <span class="restau__badge-new">Nouveau</span>
+      <a href="/noteenchantee.html" class="restau__cardwrapcontainer">
+      <div class="restau__cardimgcontainer">
+        <img src="assets/img/2stil.jpg" alt="food in a plate" class="restau__cardimg">  
       </div>
-    </header>
-    <nav class="hero wrap">
-      <section class="nav">
-        <h1 class="section__header">          
-          Réservez le menu qui vous convient
-        </h1>
-        <h2 class="nav__subtitle">
-          Découvrez des restaurans d'exception, séléctionnés par nos soins
-        </h2>
-        <button class="btn" type="button">Explorer nos restaurants</button>
-      </section>
-      <section class="fctmt">
-        <h1 class="fctmt__header section__header">
-          Fonctionnement
-        </h1>
-        <ol class="fctmt__list" type="1">
-          <li class="fctmt__list__items">
-            <i class="fas fa-mobile-alt fctmt__list__icon"></i>
-            <span>Choisissez un restaurant</span>
-          </li>
-          <li class="fctmt__list__items">
-            <i class="fas fa-list-ul fctmt__list__icon"></i>
-            <span>Composez votre menu</span>
-          </li>
-          <li class="fctmt__list__items">
-            <i class="fas fa-store fctmt__list__icon"></i>
-            <span>Dégustez au restaurant</span>
-          </li>
-        </ol>
-      </section>
-    </nav>
-    <main class="main-container wrap">
-        <h1 class="section__header">Restaurants</h1>
-        
-        <article class="restau__cardwrapper"><!-- La palette des gouts -->
-          <span class="restau__badge-new">Nouveau</span>
-          <a href="/palettedesgouts.html" class="restau__cardwrapcontainer">
-            <div class="restau__cardimgcontainer">
-              <img src="assets/img/1jay.jpg" alt="food in a plate" class="restau__cardimg">  
-            </div>
-              <footer class="card__footer">
-                  <div class="card__footcontent">
-                    <h3 class="titre">La palette du goût</h3>
-                    <span class="city">Ménilmontant</span>
-                  </div>    
-                  <div class="card__likebtn">
-                    <i class="far fa-heart likebtn"></i>      
-                  </div> 
-              </footer>
-          </a>
-        </article>
-        
-        <article class="restau__cardwrapper"><!-- La note enchantee -->
-          <span class="restau__badge-new">Nouveau</span>
-          <a href="/noteenchantee.html" class="restau__cardwrapcontainer">
-            <div class="restau__cardimgcontainer">
-              <img src="assets/img/2stil.jpg" alt="food in a plate" class="restau__cardimg">  
-            </div>
-              <footer class="card__footer">
-                  <div class="card__footcontent">
-                    <h3 class="titre">La note enchantée</h3>
-                    <span class="city">Charonne</span>
-                  </div>    
-                  <div class="card__likebtn">
-                    <i class="far fa-heart likebtn"></i>      
-                  </div> 
-              </footer>
-          </a>
-        </article>
-        
-        <article class="restau__cardwrapper"><!-- A la francaise -->
-          <a href="/alafrancaise.html" class="restau__cardwrapcontainer">
-            <div class="restau__cardimgcontainer">
-              <img src="assets/img/3toa.jpg" alt="food in a plate" class="restau__cardimg">  
-            </div>
-              <footer class="card__footer">
-                  <div class="card__footcontent">
-                    <h3 class="titre">À la Française</h3>
-                    <span class="city">Cité Rouge</span>
-                  </div>    
-                  <div class="card__likebtn">
-                    <i class="far fa-heart likebtn"></i>      
-                  </div> 
-              </footer>
-          </a>
-        </article>
-        <!-- Delice des sens -->
-        <article class="restau__cardwrapper">
-          <a href="delicedessens.html" class="restau__cardwrapcontainer">
-            <div class="restau__cardimgcontainer">
-              <img src="assets/img/4hansel.jpg" alt="food in a plate" class="restau__cardimg">  
-            </div>
-              <footer class="card__footer">
-                  <div class="card__footcontent">
-                    <h3 class="titre">Le délice des sens</h3>
-                    <span class="city">Folie-Méricourt</span>
-                  </div>    
-                  <div class="card__likebtn">
-                    <i class="far fa-heart likebtn"></i>      
-                  </div> 
-              </footer>
-          </a>
-        </article>
-    </main>
-    <footer class="footer wrap">
-      <h2 class="foot__header">
-        ohmyfood
-      </h2>
-      <ul class="foot__links__list">
-        <li class="links__list__items">          
-          <a class="foot__links" href="#"><i class="fas fa-utensils foot__icon"></i>Proposer un restaurant</a>
-        </li>
-        <li class="links__list__items">          
-          <a class="foot__links" href="#"><i class="fas fa-hands-helping foot__icon"></i>Devenir partenaire</a>
-        </li>
-        <li class="links__list__items"><a class="foot__links" href="#">Mentions légales</a></li>
-        <li class="links__list__items"><a class="foot__links" href="#">Contact</a></li>
-      </ul>
-    </footer>
+        <footer class="card__footer">
+          <div class="card__footcontent">
+          <h3 class="titre">La note enchantée</h3>
+          <span class="city">Charonne</span>
+          </div>  
+          <div class="card__likebtn">
+          <i class="far fa-heart likebtn"></i>    
+          </div> 
+        </footer>
+      </a>
+    </article>
+    
+    <article class="restau__cardwrapper"><!-- A la francaise -->
+      <a href="/alafrancaise.html" class="restau__cardwrapcontainer">
+      <div class="restau__cardimgcontainer">
+        <img src="assets/img/3toa.jpg" alt="food in a plate" class="restau__cardimg">  
+      </div>
+        <footer class="card__footer">
+          <div class="card__footcontent">
+          <h3 class="titre">À la Française</h3>
+          <span class="city">Cité Rouge</span>
+          </div>  
+          <div class="card__likebtn">
+          <i class="far fa-heart likebtn"></i>    
+          </div> 
+        </footer>
+      </a>
+    </article>
+    <!-- Delice des sens -->
+    <article class="restau__cardwrapper">
+      <a href="delicedessens.html" class="restau__cardwrapcontainer">
+      <div class="restau__cardimgcontainer">
+        <img src="assets/img/4hansel.jpg" alt="food in a plate" class="restau__cardimg">  
+      </div>
+        <footer class="card__footer">
+          <div class="card__footcontent">
+          <h3 class="titre">Le délice des sens</h3>
+          <span class="city">Folie-Méricourt</span>
+          </div>  
+          <div class="card__likebtn">
+          <i class="far fa-heart likebtn"></i>    
+          </div> 
+        </footer>
+      </a>
+    </article>
+  </main>
+  <footer class="footer">
+    <h2 class="foot__header">
+    ohmyfood
+    </h2>
+    <ul class="foot__links__list">
+    <li class="links__list__items">      
+      <a class="foot__links" href="#"><i class="fas fa-utensils foot__icon"></i>Proposer un restaurant</a>
+    </li>
+    <li class="links__list__items">      
+      <a class="foot__links" href="#"><i class="fas fa-hands-helping foot__icon"></i>Devenir partenaire</a>
+    </li>
+    <li class="links__list__items"><a class="foot__links" href="#">Mentions légales</a></li>
+    <li class="links__list__items"><a class="foot__links" href="#">Contact</a></li>
+    </ul>
+  </footer>
   </div>  
 </body>
 </html>

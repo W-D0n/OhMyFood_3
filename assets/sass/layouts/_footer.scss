@@ -1,24 +1,24 @@
 // Footer
 .footer{
-    display: flex;
-    flex-direction: column;
-    padding: 1.5rem 2rem;
-    background-color: $bg-foot;
+  display: flex;
+  flex-direction: column;
+  padding: 1.5rem 2rem;
+  background-color: $bg-foot;
   }
   .foot__header{
-    font-family: $fontstyled;
-    font-size: 1.3rem;
-    margin-bottom: 1.2rem;
-    color: $fontcolor-primaire;
+  font-family: $fontstyled;
+  font-size: 1.3rem;
+  margin-bottom: 1.2rem;
+  color: $fontcolor-primaire;
   }
   .foot__links__list :first-child{
-      margin-top: 0;
-    }
+    margin-top: 0;
+  }
   .links__list__items{
-    margin: 0.5rem 0;
-    color: $fontcolor-primaire;  
+  margin: 0.5rem 0;
+  color: $fontcolor-primaire;  
   }
   .foot__icon{
-    width: 1.2rem;
-    margin-right: 0.5rem;
+  width: 1.2rem;
+  margin-right: 0.5rem;
   }

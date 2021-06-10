@@ -2,19 +2,18 @@
 @use './abstract';
 
 //utilisation précédente
-@import './base/_reset.scss';
-@import './abstract/_var.scss';
-@import './abstract/_mixins.scss';
-@import './abstract/_wrapper.scss';
-@import './base/_breakpoints.scss';
-@import './base/_cards.scss';
-@import './base/_typo.scss';
-@import './components/_btns.scss';
-@import './components/_loader.scss';
-@import './layouts/_header.scss';
-@import './layouts/_nav.scss';
-@import './layouts/_main.scss';
-@import './layouts/_footer.scss';
+@import './base/reset';
+@import './abstract/var';
+@import './abstract/mixins';
+@import './abstract/wrapper';
+@import './base/cards';
+@import './base/typo';
+@import './components/btns';
+@import './components/loader';
+@import './layouts/header';
+@import './layouts/nav';
+@import './layouts/main';
+@import './layouts/footer';
 
-@import './pages/_home.scss';
-@import './pages/_menus.scss';
+@import './pages/home';
+@import './pages/menus';

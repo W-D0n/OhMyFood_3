@@ -1,7 +1,7 @@
 //Style pour les titres de sections en H2
 .section__header{
-  font-weight: $gras;
-  font-size: 1.5rem;    
+  font-weight: map-get($fontweight, gras);
+  font-size: 1.5rem;  
   margin:1.5rem 0;
 }
 .restau__name{
