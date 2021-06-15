@@ -3,11 +3,11 @@
 
 
 //Polices de caractères
-$fontstyled:Shrikhand, 'cursive';
-$font-neutral:Roboto, 'sans-serrif';
+$font_title:Shrikhand, 'cursive';
+$font_text:Roboto, 'sans-serrif';
 
 html{
-  font-family: $font-neutral;
+  font-family: $font_text;
 }
 
 //Radius
@@ -18,26 +18,31 @@ $btn-bord-radius:100px;
 //Couleurs principales en Hue-saturation-lightness-alpha
 $primaire:hsla(267,66%,60%,1); //#9356DC
 $secondaire:hsla(317,100%,74%,1); //#FF79DA
-$tertiaire:hsla(165,56%,74%,1);//#99E2D0
+$tertiaire:hsla(165,56%,74%,1); //#99E2D0
 
 
-//Couleur utilitaires 
+//Couleurs utilitaires 
 $hover_prim_color:hsla(267, 66%, 60%, 0.2);
 $btn-menu-anime:hsla(267,100%,96%,1);
-$fontcolor-primaire:hsla(0,0%,100%,1);
+$icon-fctmt:hsla(0,0%,49%,1); //#7e7e7e
+$fontcolor-primaire:hsla(0,0%,100%,1); //#FFFFFF
 $fontcolor-secondaire:hsla(0,0%,21%,1);
 $fontcolor-tertiaire:hsla(0,0%,16%,1);
 $fontcolor-badge-new:hsla(165,56%,24%,1);
 
-//Backgrounds
+//Couleurs Backgrounds
 $bg-primaire:hsla(0,0%,100%,1);
 $bg-grey-light:hsla(0,0%,93%,1);
 $bg-grey-lighter:hsla(0,0%,96%,1);
 $bg-foot:hsla(0,0%,22%,1);
-$bg-badge:hsla(165,56%,74%,1);
+$bg-badge:hsla(165,56%,74%,1); //#98e2cf
 
 //Graisse des font - utilisation d'une map
-$fontweight: (gras:800,medium:500,low:400);
+$fontweight: (
+  gras:800,
+  medium:500,
+  low:400
+);
 
 //Map breakpoints
 $breakpoints:(
@@ -46,5 +51,22 @@ $breakpoints:(
   tab-portrait:768px,
   tab-landscape:1024px,
   desk:1200px,
-  desk-wide:1440,
+  desk-wide:1440
 );
+
+//Animations
+$transi_menu_duration:400ms;
+$transi_menu_delay:400ms;
+$transi_menu_fct:ease-in;
+
+$transi_checkbox_duration:400ms;
+$transi_checkbox_delay:200ms;
+$transi_checkbox_fct: ease-in-out;
+
+$transi_checkicon_duration:200ms;
+$transi_checkicon_delay:200ms;
+$transi_checkicon_fct: ease;
+
+$transi_btn_duration:200ms;
+$transi_btn_delay:100ms;
+$transi_btn_fct: ease-in;

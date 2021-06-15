@@ -167,9 +167,12 @@ html {
   font-size: 1rem;
   font-weight: 500;
   cursor: pointer;
-  background-color: #686868;
-  background-image: linear-gradient(#FF79DA, #9356DC);
+  background-image: linear-gradient(#ff7ad9, #9256dc);
   box-shadow: 0.25rem 0.25rem 10px rgba(0, 0, 0, 0.25);
+  transition: all 200ms ease-in;
+}
+.btn:hover {
+  opacity: 0.8;
 }
 .btn:active {
   transform: scale(0.99);
@@ -280,7 +283,7 @@ i[class*=fav__heart] {
 
 .fctmt__list__icon {
   margin-right: 1rem;
-  color: #7e7e7e;
+  color: #7d7d7d;
 }
 
 .main-container {
@@ -305,16 +308,12 @@ i[class*=fav__heart] {
   color: white;
 }
 
-.foot__links__list :first-child {
-  margin-top: 0;
-}
-
-.links__list__items {
-  margin: 0.5rem 0;
+.foot__links__list {
   color: white;
+  display: flex;
+  flex-direction: column;
 }
-
-.foot__icon {
+.foot__links__list__icon {
   width: 1.2rem;
   margin-right: 0.5rem;
 }
@@ -346,17 +345,93 @@ i[class*=fav__heart] {
 .menu__content {
   display: grid;
   gap: 20px;
+  padding: 0 1rem 3rem 1rem;
+}
+
+.menu__type {
+  font-size: 1.2rem;
+  text-transform: uppercase;
 }
 
 .menu__item {
+  display: grid;
+  grid-template-columns: 1fr auto auto;
+  gap: 20px;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+  position: relative;
   border-radius: 20px;
   box-shadow: 3px 4px 11px 5px rgba(0, 0, 0, 0.1);
   cursor: pointer;
   height: 4rem;
   background-color: white;
+}
+.menu__item:hover .menu__item__checkbox {
+  transform: translateX(0);
+}
+.menu__item:hover .menu__item__price {
+  transform: translateX(-200%);
+}
+.menu__item:hover .menu__item__header {
+  width: 70%;
+}
+.menu__item:hover .menu__item__icon {
+  transform: rotate(0);
+}
+
+.menu__item__header {
+  display: flex;
+  flex-direction: column;
+  margin: 0 10px;
+  width: 100%;
+  overflow: hidden;
+  transition: 400ms ease-in-out;
+}
+
+.menu__item__title,
+.menu__item__price {
+  font-weight: 800;
+}
+
+.menu__item__title,
+.menu__item__description {
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  margin: 0 5px;
+}
+
+.menu__item__price {
+  align-self: end;
+  margin: 10px 5px;
+  transition: transform 400ms ease-in-out;
+}
+
+.menu__item__checkbox {
+  position: absolute;
+  right: 0;
+  top: 0;
+  background-color: #98e2cf;
+  color: white;
+  width: 4rem;
+  height: 100%;
+  display: flex;
+  justify-content: center;
   align-items: center;
-  display: grid;
-  grid-template-columns: 1fr repeat(2, auto);
+  border-radius: 0 20px 20px 0;
+  animation-fill-mode: both;
+  transition: transform 400ms ease-in-out;
+  transform: translateX(100%);
+}
+
+.menu__item__icon {
+  background-color: white;
+  color: #98e2cf;
+  padding: 4px;
+  border-radius: 25px;
+  transition: all 200ms ease 200ms;
+  transform: rotate(-180deg);
 }
 
 /*# sourceMappingURL=style.css.map */

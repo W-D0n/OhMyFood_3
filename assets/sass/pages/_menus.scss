@@ -23,14 +23,101 @@
 .menu__content{
   display: grid;
   gap: 20px;
+  padding: 0 1rem 3rem 1rem;
+}
+
+.menu__type{
+  font-size: 1.2rem;
+  text-transform: uppercase;
 }
 .menu__item{
+  display: grid;
+  grid-template-columns: 1fr auto auto;
+  gap: 20px;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+  position: relative;
   border-radius: 20px;
   box-shadow: 3px 4px 11px 5px rgba(0, 0, 0, 0.1);
   cursor: pointer;
   height: 4rem;
   background-color: $bg-primaire;
-  align-items: center;
-  display: grid;
-  grid-template-columns: 1fr repeat(2, auto);
+  
+  //Règles appliquées au survol (partie desk)
+  &:hover .menu__item__checkbox {
+		transform: translateX(0);
+	}
+  &:hover .menu__item__price{
+    transform: translateX(-200%);
+  }
+  &:hover .menu__item__header{
+		width:70%;
+	}
+  &:hover .menu__item__icon{
+    transform: rotate(0);
+  }
+  
+  // A intégrer pour la partie mobile
+  // &:active .menu__item__checkbox {
+	// 	transform: translateX(0);
+	// }
+  // &:active .menu__item__price{
+  //   transform: translateX(-200%);
+  // }
+  // &:active .menu__item__header{
+	// 	width:70%;
+	// }
+  // &:active .menu__item__icon{
+  //   transform: rotate(0);
+  // }
+}
+.menu__item__header {
+	display:flex;
+	flex-direction:column;
+	margin: 0 10px;
+	width:100%;
+	overflow: hidden;
+	transition: 400ms ease-in-out;
+}
+.menu__item__title,
+.menu__item__price{
+  font-weight: map-get($fontweight , gras);
+}
+
+.menu__item__title,
+.menu__item__description {
+	@include ellipsis;
+  margin: 0 5px;
+}
+.menu__item__price {
+	align-self: end;
+	margin: 10px 5px;
+	transition: transform 400ms ease-in-out;
+}
+
+.menu__item__checkbox {
+	position:absolute;
+	right:0;
+	top:0;
+	background-color: $tertiaire;
+	color: $fontcolor-primaire;
+	width: 4rem;
+	height: 100%;
+	@include flex-center;
+	border-radius: 0 20px 20px 0;
+  animation-fill-mode: both;
+	@include transi_checkbox;
+	transform: translateX(100%);
+}
+.menu__item__icon-container{
+  //background-color: $bg-primaire;
+}
+.menu__item__icon{
+  background-color: $bg-primaire;
+  color: $tertiaire;
+  padding: 4px;
+  border-radius: 25px;
+  @include transi_checkicon;
+  transform: rotate(-180deg);
 }

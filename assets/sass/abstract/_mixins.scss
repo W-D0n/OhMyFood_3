@@ -5,7 +5,7 @@
   box-shadow: 0.25rem 0.25rem 0.5rem rgba(0, 0, 0, 0.125);
 }
 
-@mixin flex-center{
+@mixin flex-center {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -19,10 +19,21 @@
 }
 
 //Fonctions pour chaque breakpoints utiliser la valeur de la variable correspondante contenue dans la map $breakpoints
-@each $breakpoint, $value in $breakpoints {
+// @each $breakpoint, $value in $breakpoints {
  
-}
+// }
+// @mixin menu_appear{
 
+// }
+@mixin transi_checkbox {
+  transition: transform $transi_checkbox_duration $transi_checkbox_fct;
+}
+@mixin transi_checkicon {
+  transition: all $transi_checkicon_duration $transi_checkicon_fct $transi_checkicon_delay;  
+}
+@mixin transi_btn {
+  transition: all $transi_btn_duration $transi_btn_fct;
+}
 //CREER DES MIXINS POUR LES MEDIAQUERIES
 //Sup à 1024 jusqu'à 1920
 $media_desk_high-res:'only screen and (max-width: 1920px)';
