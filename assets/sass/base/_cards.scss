@@ -16,11 +16,12 @@
 .card__footcontent{
   flex:1;
 }
-.card__likebtn{
+.card__like-btn{
   @include flex-center;
 }
-.likebtn{
+.like-btn{
   font-size:2rem;
+  @include transi_btn-like;
 }
 
 //Badge NOUVEAU

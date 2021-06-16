@@ -56,17 +56,13 @@ $breakpoints:(
 
 //Animations
 $transi_menu_duration:400ms;
-$transi_menu_delay:400ms;
-$transi_menu_fct:ease-in;
-
-$transi_checkbox_duration:400ms;
-$transi_checkbox_delay:200ms;
-$transi_checkbox_fct: ease-in-out;
-
-$transi_checkicon_duration:200ms;
-$transi_checkicon_delay:200ms;
-$transi_checkicon_fct: ease;
+$transi_menu_delay:100ms;
+$transi_menu_fct:ease-in-out;
 
 $transi_btn_duration:200ms;
 $transi_btn_delay:100ms;
 $transi_btn_fct: ease-in;
+
+$transi_like-btn_duration: 400ms;
+$transi_like-btn_delay: 100ms;
+$transi_like-btn_fct: ease-in;

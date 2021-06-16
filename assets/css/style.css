@@ -129,14 +129,15 @@ html {
   flex: 1;
 }
 
-.card__likebtn {
+.card__like-btn {
   display: flex;
   justify-content: center;
   align-items: center;
 }
 
-.likebtn {
+.like-btn {
   font-size: 2rem;
+  transition: all 400ms 100ms ease-in;
 }
 
 .restau__badge-new {
@@ -172,7 +173,7 @@ html {
   transition: all 200ms ease-in;
 }
 .btn:hover {
-  opacity: 0.8;
+  opacard__city: 0.8;
 }
 .btn:active {
   transform: scale(0.99);
@@ -351,6 +352,17 @@ i[class*=fav__heart] {
 .menu__type {
   font-size: 1.2rem;
   text-transform: uppercase;
+  position: relative;
+  padding-bottom: 0.5rem;
+}
+.menu__type::after {
+  content: "";
+  position: absolute;
+  width: 3rem;
+  height: 0.2rem;
+  background: #98e2cf;
+  left: 0;
+  bottom: 0;
 }
 
 .menu__item {
@@ -405,7 +417,7 @@ i[class*=fav__heart] {
 .menu__item__price {
   align-self: end;
   margin: 10px 5px;
-  transition: transform 400ms ease-in-out;
+  transition: all 400ms ease-in-out 100ms;
 }
 
 .menu__item__checkbox {
@@ -421,7 +433,7 @@ i[class*=fav__heart] {
   align-items: center;
   border-radius: 0 20px 20px 0;
   animation-fill-mode: both;
-  transition: transform 400ms ease-in-out;
+  transition: all 400ms ease-in-out 100ms;
   transform: translateX(100%);
 }
 
@@ -430,8 +442,8 @@ i[class*=fav__heart] {
   color: #98e2cf;
   padding: 4px;
   border-radius: 25px;
-  transition: all 200ms ease 200ms;
-  transform: rotate(-180deg);
+  transition: all 400ms ease-in-out 100ms;
+  transform: rotate(360deg);
 }
 
 /*# sourceMappingURL=style.css.map */

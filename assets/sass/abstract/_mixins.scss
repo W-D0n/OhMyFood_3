@@ -22,28 +22,21 @@
 // @each $breakpoint, $value in $breakpoints {
  
 // }
+
+
+
+//Animations
+@mixin transi_btn-like{
+  transition: all $transi_like-btn_duration $transi_like-btn_delay $transi_like-btn_fct;
+}
+
 // @mixin menu_appear{
 
 // }
-@mixin transi_checkbox {
-  transition: transform $transi_checkbox_duration $transi_checkbox_fct;
+@mixin transi_menu {
+  transition: all $transi_menu_duration $transi_menu_fct $transi_menu_delay;  
 }
-@mixin transi_checkicon {
-  transition: all $transi_checkicon_duration $transi_checkicon_fct $transi_checkicon_delay;  
-}
+
 @mixin transi_btn {
   transition: all $transi_btn_duration $transi_btn_fct;
 }
-//CREER DES MIXINS POUR LES MEDIAQUERIES
-//Sup à 1024 jusqu'à 1920
-$media_desk_high-res:'only screen and (max-width: 1920px)';
-
-//Écrans à très faible réso
-$media_desk_mid-res:'only screen and (min-width: 921px) and (max-width: 1024px)';
-
-//Tab orientée en portrait (non paramétré)
-$media_tab-res:'only screen and (min-width: 601px) and (max-width: 920px)';
-
-//Réso des mobiles
-$media_mobile-res:'only screen and (max-width: 600px)';
-
