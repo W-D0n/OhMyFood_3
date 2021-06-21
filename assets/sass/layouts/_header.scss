@@ -1,46 +1,48 @@
 //head
-.header__logo{
+.header__logo {
+  display: flex;
+  @include box-center;
   @include heading_shadow;
-  @include flex-center;
   position: relative;
   padding: 1rem 0;
   height: 5rem;
-  }
-.logo{
+}
+.logo {
   max-height: 2rem;
 }
 
 //Retour à l'index
-.backtoindex__arrow{
+.backtoindex__arrow {
   position: absolute;
   left: 1.2rem;
   font-size: 1.2rem;
 }
-  
-.header__location{
-  background:$bg-grey-light;
-  @include flex-center;
+
+.header__location {
+  display: flex;
+  @include box-center;
+  background: $bg-grey-light;
   padding: 1rem;
-  color: $fontcolor-tertiaire; 
+  color: $fontcolor-tertiaire;
 }
-.location__icon{
+.location__icon {
   margin-right: 0.8rem;
 }
-.location{
+.location {
   font-weight: map-get($fontweight, medium);
 }
 //Hero
-.hero{
+.hero {
   text-align: center;
 }
 //nav
-.nav{
+.nav {
   background-color: $bg-grey-lighter;
   padding: 2rem;
 }
 
-.nav__subtitle{
+.nav__subtitle {
   margin: 1rem 0;
   font-weight: map-get($fontweight, low);
-  color:$fontcolor-tertiaire;
+  color: $fontcolor-tertiaire;
 }

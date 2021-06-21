@@ -22,7 +22,8 @@ counter-reset: list__items;
   border-radius: 1.25rem;
   
   &::before{ //Affichage des puces numérotées devant les items de la liste.
-    @include flex-center;
+    display: flex;
+    @include box-center;
     color: $fontcolor-primaire;
     position:absolute;
     counter-increment: list__items;

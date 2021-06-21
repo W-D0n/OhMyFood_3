@@ -1,5 +1,5 @@
 //Style des boutons
-.btn{
+.btn {
   border: 0;
   border-radius: $btn-bord-radius;
   padding: 1rem 1.5rem;
@@ -7,34 +7,34 @@
   font-size: 1rem;
   font-weight: map-get($fontweight, medium);
   cursor: pointer;
-  background-image: linear-gradient($secondaire,$primaire);
+  background-image: linear-gradient($secondaire, $primaire);
   box-shadow: 0.25rem 0.25rem 10px rgba(0, 0, 0, 0.25);
   @include transi_btn;
-    
-    &:hover{
-      opacard__city: 0.8;
+
+    &:hover {
+      opacity: 0.8;
     }
-    &:active{
+    &:active {
       transform: scale(0.99);
     }
 }
 
-.commande{
+.commande {
   margin: 2rem auto 3rem auto;
 }
 
-//Icone de coeur favoris 
-i[class*='fav__heart']{
-     cursor: pointer;
-  }
-   
-  // &:hover
-  // {
-  //   background: linear-gradient(170deg, $secondaire 0%, $primaire 100%);
-  //   background-clip: text;
-  //   -webkit-background-clip: text;
-  //   color: transparent;
-  //   position: relative;
-  //   overflow: hidden;
-  //   z-index: 1;
-  // }
+//Icone de coeur favoris
+i[class*="fav__heart"] {
+  cursor: pointer;
+}
+
+// &:hover
+// {
+//   background: linear-gradient(170deg, $secondaire 0%, $primaire 100%);
+//   background-clip: text;
+//   -webkit-background-clip: text;
+//   color: transparent;
+//   position: relative;
+//   overflow: hidden;
+//   z-index: 1;
+// }

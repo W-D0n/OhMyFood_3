@@ -1,0 +1,71 @@
+.loader {
+  display: inline-flex;
+  height: 100vh;
+  width: 100vw;
+  @include box-center;
+  background-color: $bg-primaire;
+  position: fixed;
+  z-index: 1;
+  animation: loader-display 3s ease-in-out 2.5s forwards;
+
+  &__container {
+    height: 5rem;
+    width: 40rem;
+  }
+
+  &__svg {
+    height: 100%;
+    width: 100%;
+    font-size: 100rem;
+
+    & path {
+      fill: transparent;
+      stroke: $primaire;
+      stroke-width: 0.1rem;
+      stroke-dasharray: 200;
+      stroke-dashoffset: 0%;
+      animation: dash 5.2s ease-in-out 300ms forwards;
+      opacity: 0;
+    }
+  }
+}
+@keyframes loader-display {
+  0% {
+    visibility: visible;
+  }
+  85% {
+    opacity: 0.9;
+  }
+  100% {
+    opacity: 0;
+    visibility: hidden;
+  }
+}
+
+@keyframes dash {
+  0% {
+    stroke-dashoffset: 150%;
+  }
+  10% {
+    opacity: 1;
+  }
+  
+  90% {
+    opacity: 0.95;
+  }
+  100% {
+    stroke-dashoffset: 0%;
+    opacity: 0;
+  }
+}
+// @keyframes dash-invert {
+//   0% {
+//     stroke-dashoffset: 200;
+//   }
+//   100% {
+//     stroke-dashoffset: 100;
+//   }
+//   0% {
+//     stroke-dashoffset: 0;
+//   }
+// }

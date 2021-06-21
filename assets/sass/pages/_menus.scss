@@ -109,6 +109,8 @@
 }
 
 .menu__item__checkbox {
+  display: flex;
+  @include box-center;
 	position:absolute;
 	right:0;
 	top:0;
@@ -116,7 +118,6 @@
 	color: $fontcolor-primaire;
 	width: 4rem;
 	height: 100%;
-	@include flex-center;
 	border-radius: 0 20px 20px 0;
   animation-fill-mode: both;
   @include transi_menu;

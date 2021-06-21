@@ -4,37 +4,33 @@
 @mixin shadow {
   box-shadow: 0.25rem 0.25rem 0.5rem rgba(0, 0, 0, 0.125);
 }
-
-@mixin flex-center {
-  display: flex;
+@mixin box-center {
   justify-content: center;
   align-items: center;
 }
-
 //quand le texte depasse, évite le wrap, cache le texte, affiche trois petits points
 @mixin ellipsis {
-	white-space: nowrap;
-	overflow: hidden;
-	text-overflow: ellipsis;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
 }
 
 //Fonctions pour chaque breakpoints utiliser la valeur de la variable correspondante contenue dans la map $breakpoints
 // @each $breakpoint, $value in $breakpoints {
- 
+
 // }
 
-
-
 //Animations
-@mixin transi_btn-like{
-  transition: all $transi_like-btn_duration $transi_like-btn_delay $transi_like-btn_fct;
+@mixin transi_btn-like {
+  transition: all $transi_like-btn_duration $transi_like-btn_delay
+    $transi_like-btn_fct;
 }
 
 // @mixin menu_appear{
 
 // }
 @mixin transi_menu {
-  transition: all $transi_menu_duration $transi_menu_fct $transi_menu_delay;  
+  transition: all $transi_menu_duration $transi_menu_fct $transi_menu_delay;
 }
 
 @mixin transi_btn {
