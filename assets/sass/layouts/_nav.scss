@@ -1,50 +1,47 @@
 //Fonctionnement fctmt
-.fctmt{
+.fctmt {
   display: flex;
   flex-direction: column;
   padding: 2rem 1rem;
 }
-.fctmt__header{
-text-align: start;
+.fctmt__header {
+  text-align: start;
 }
-.fctmt__list{
-position: relative;
-list-style-type: none;
-counter-reset: list__items;
+.fctmt__list {
+  position: relative;
+  list-style-type: none;
+  counter-reset: list__items;
 }
-.fctmt__list__items{
-  @include shadow;
+.fctmt__list__items {
+  box-shadow: 0.25rem, 0.25rem, 0.5rem, rgba(0, 0, 0, 0.125);
   display: flex;
   background-color: $bg-grey-lighter;
   padding: 1.5rem;
-  margin:1rem 0 1rem 0.75rem;
-  margin-bottom: 1rem;
+  margin: 1rem 0 1rem 0.75rem;
   border-radius: 1.25rem;
-  
-  &::before{ //Affichage des puces numérotées devant les items de la liste.
+
+  &::before {
+    //Affichage des puces numérotées devant les items de la liste.
+    @include element_position($position: absolute, $left:-0.1rem);
     display: flex;
-    @include box-center;
-    color: $fontcolor-primaire;
-    position:absolute;
+    @include box_center;
+    @include width-height ($width:1.5rem, $height:1.5rem);
     counter-increment: list__items;
     content: counter(list__items);
     background-color: $primaire;
-    height: 1.5rem;
-    width: 1.5rem;  
-    left: -0.1rem;
+    color: $fontcolor-primaire;
     border-radius: 100px;
   }
   //ne l'appliquer qu'avec le format desk !
   // &:hover{
   //   background-color:$hover_prim_color;
   // }
-  
-  &:active{
-    background-color:$hover_prim_color;
-  }
 
+  &:active {
+    background-color: $hover_prim_color;
+  }
 }
-.fctmt__list__icon{
+.fctmt__list__icon {
   margin-right: 1rem;
   color: $icon-fctmt;
 }

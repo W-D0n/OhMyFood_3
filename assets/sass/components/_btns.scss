@@ -8,18 +8,18 @@
   font-weight: map-get($fontweight, medium);
   cursor: pointer;
   background-image: linear-gradient($secondaire, $primaire);
-  box-shadow: 0.25rem 0.25rem 10px rgba(0, 0, 0, 0.25);
-  @include transi_btn;
+  box-shadow: 0.25rem 0.25rem 1.8rem rgba(0, 0, 0, 0.25);
+  @include transi_like-btn;
 
-    &:hover {
-      opacity: 0.8;
-    }
-    &:active {
-      transform: scale(0.99);
-    }
+  &:hover {
+    opacity: 0.8;
+  }
+  &:active {
+    transform: scale(0.99);
+  }
 }
 
-.commande {
+.btn_command {
   margin: 2rem auto 3rem auto;
 }
 
@@ -27,14 +27,19 @@
 i[class*="fav__heart"] {
   cursor: pointer;
 }
+.btn_like {
+  display: flex;
+  @include box_center;
+  @include width-height ($width: 2rem, $height: 2rem);
+  cursor: pointer;
+}
 
-// &:hover
-// {
-//   background: linear-gradient(170deg, $secondaire 0%, $primaire 100%);
-//   background-clip: text;
-//   -webkit-background-clip: text;
-//   color: transparent;
-//   position: relative;
-//   overflow: hidden;
-//   z-index: 1;
-// }
+//Paramètres du gradient sur le svg coeur
+.svg_heart:hover path {
+  // fill: none;
+  // stroke: black;
+  @include heart_animation;
+}
+@include heart_keyframes;
+
+

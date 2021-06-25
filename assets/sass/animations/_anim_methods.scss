@@ -1,0 +1,122 @@
+//Animation de l'écran loader avec le fondu
+@mixin animation_loader-display {
+  animation: animation_loader-display
+    map-get($anim_duration, animation_loader-display)
+    map-get($anim_fct, animation_loader-display)
+    map-get($anim_fill-mode, animation_loader-display);
+}
+@mixin keyframes_loader-display {
+  @keyframes animation_loader-display {
+    0% {
+      visibility: visible;
+    }
+    90% {
+      opacity: 1;
+    }
+    100% {
+      opacity: 0;
+      visibility: hidden;
+    }
+  }
+}
+//Animation de l'écriture du logo
+@mixin animation_loader-stroke {
+  animation: animation_loader-stroke
+    map-get($anim_duration, animation_loader-stroke)
+    map-get($anim_fill-mode, animation_loader-stroke);
+}
+@mixin keyframes_loader-stroke {
+  @keyframes animation_loader-stroke {
+    //Animation d'écriture du logo
+    0% {
+      stroke-dashoffset: 150%;
+    }
+    10% {
+      opacity: 1;
+    }
+    70% {
+      opacity: 0.95;
+    }
+    85% {
+      stroke-dashoffset: 0%;
+      opacity: 0;
+    }
+    100% {
+      opacity: 0;
+    }
+  }
+}
+//Animations d'apparition de la checkbox des menus
+@mixin transi_menu-checkbox {
+  transition: all map-get($anim_duration, transi_menu-checkbox)
+    map-get($anim_fct, transi_menu-checkbox)
+    map-get($anim_delay, transi_menu-checkbox);
+}
+//Animation du btn like en forme de coeur
+@mixin transi_like-btn {
+  transition: all map-get($anim_duration, transi_like-btn)
+    map-get($anim_fct, transi_like-btn);
+}
+//Animation d'apparition du titre de type d'item menu
+@mixin fadein_title {
+  animation: t-fadein map-get($anim_duration, fadein_title)
+    map-get($anim_fct, fadein_title) map-get($anim_delay, fadein_title)
+    map-get($anim_fill-mode, fadein_title);
+}
+@mixin keyframes_title {
+  @keyframes t-fadein {
+    0% {
+      opacity: 0;
+    }
+    100% {
+      opacity: 1;
+      visibility: visible;
+    }
+  }
+}
+//Animation d'apparition progressive des items de menu
+@mixin fadein_menu {
+  animation: m-fadein map-get($anim_duration, fadein_menu)
+    map-get($anim_fct, fadein_menu) map-get($anim_fill-mode, fadein_menu);
+}
+@mixin keyframes_menu {
+  @keyframes m-fadein {
+    0% {
+      transform: translateY(100px);
+      opacity: 0;
+    }
+    100% {
+      transform: translateY(0);
+      opacity: 1;
+      visibility: visible;
+    }
+  }
+}
+
+//Animation survol des coeurs
+@mixin heart_animation {
+  animation: heart_anim map-get($anim_duration, heart_anim)
+    map-get($anim_fct, heart_anim) map-get($anim_fill-mode, heart_anim)
+    map-get($anim_delay, heart_anim);
+}
+@mixin heart_keyframes {
+  @keyframes heart_anim {
+    0% {
+      stroke-opacity: 1;
+    }
+    100% {
+      stroke-opacity: 0;
+      fill: url(#svg_gradient);
+    }
+  }
+}
+@mixin heart_transition {
+  transition: heart_anim map-get($anim_duration, heart_anim)
+    map-get($anim_fct, heart_anim) map-get($anim_fill-mode, heart_anim)
+    map-get($anim_delay, heart_anim);
+}
+@mixin heart_transform {
+  &:hover {
+    fill: url(#svg_gradient);
+  }
+}

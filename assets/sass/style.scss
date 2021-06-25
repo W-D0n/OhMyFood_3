@@ -1,19 +1,16 @@
-//utilisation de @use + @forward (+_index.scss'
-@use './abstract';
-
 //utilisation précédente
-@import './base/reset';
-@import './abstract/var';
-@import './abstract/mixins';
-@import './abstract/wrapper';
-@import './base/cards';
-@import './base/typo';
-@import './components/btns';
-@import './components/loader';
-@import './layouts/header';
-@import './layouts/nav';
-@import './layouts/main';
-@import './layouts/footer';
+@import "./base/reset";
+@import "./abstract/var";
+@import "./abstract/methods";
+@import "./animations/anim_vars";
+@import "./animations/anim_methods";
+@import "./abstract/wrapper";
+@import "./base/cards";
+@import "./components/btns";
+@import "./components/loader";
+@import "./layouts/header";
+@import "./layouts/nav";
+@import "./layouts/main";
+@import "./layouts/footer";
 
-@import './pages/home';
-@import './pages/menus';
+@import "./pages/menus";

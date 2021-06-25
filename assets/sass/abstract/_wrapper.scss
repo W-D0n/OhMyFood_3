@@ -1,19 +1,17 @@
 //Wrap global
-.wrapper{
+.wrapper {
   margin: 0.7rem;
 }
-
-//Wrap des blocs/éléments
-.wrap{
+//Wrap des blocs et éléments
+.wrap {
   max-width: 100%;
   margin: 0 auto;
   background-color: $bg-primaire;
 }
-
 //Wrap des cards
-.restau__cardwrapper{
-  display: block;
+.restau__card_wrapper {
   position: relative;
-  background: $bg-primaire;
-  border-radius:$card-bord-radius;
+  display: block;
+  background-color: $bg-primaire;
+  border-radius: $card-bord-radius;
 }

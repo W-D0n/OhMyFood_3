@@ -1,37 +1,33 @@
-.restau__cardimgcontainer{
+.restau__card_imgcontainer {
   display: block;
-  border-radius:$card-bord-radius;
-  overflow: hidden;
   height: 11rem;
-  border-radius:$card-bord-radius $card-bord-radius 0 0;
+  border-radius: $card-bord-radius;
+  overflow: hidden;
+  border-radius: $card-bord-radius $card-bord-radius 0 0;
 }
-.restau__cardimg{
-  width:100%;
-  object-fit:cover;
-}
-.card__footer{
-  display:flex;
-  padding:0.5rem;  
-}
-.card__footcontent{
-  flex:1;
-}
-.card__like-btn{
-  display: flex;
-  @include box-center;
-}
-.like-btn{
-  font-size:2rem;
-  @include transi_btn-like;
+.restau__card_img {
+  width: 100%;
+  object-fit: cover;
 }
 
-//Badge NOUVEAU
-.restau__badge-new{
-  position:absolute;
-  top:1rem;
-  right:1rem;
-  padding:0.5rem;
-  border-radius:$badge-bord-radius;
-  background-color: $bg-badge;
-  color:$fontcolor-badge-new;
+//Badge 'NOUVEAU'
+.restau__badge-new {
+  @include element_position($position: absolute, $top: 1rem, $right: 1rem);
+  padding: 0.5rem;
+  border-radius: $badge-bord-radius;
+  background-color: $tertiaire;
+  color: $fontcolor-badge-new;
 }
+.card__footer {
+  display: flex;
+  padding: 0.5rem;
+}
+.card__footcontent {
+  flex: 1;
+  &__title{
+    font-weight: map-get($fontweight, gras);
+  }
+}
+// .card__title{
+//   font-weight: map-get($fontweight, gras);
+// }
