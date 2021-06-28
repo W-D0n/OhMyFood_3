@@ -10,13 +10,12 @@
   background-image: linear-gradient($secondaire, $primaire);
   box-shadow: 0.25rem 0.25rem 1.8rem rgba(0, 0, 0, 0.25);
   @include transi_like-btn;
-
-  &:hover {
-    opacity: 0.8;
-  }
-  &:active {
-    transform: scale(0.99);
-  }
+    &:hover {
+      opacity: 0.8;
+    }
+    &:active {
+      transform: scale(0.99);
+    }
 }
 
 .btn_command {
@@ -27,19 +26,25 @@
 i[class*="fav__heart"] {
   cursor: pointer;
 }
+
 .btn_like {
   display: flex;
   @include box_center;
-  @include width-height ($width: 2rem, $height: 2rem);
+  @include width-height($width: 2rem, $height: 2rem);
   cursor: pointer;
+  fill: transparent;
+  stroke: $fontcolor-secondaire;
+  stroke-width: 1px;
+  position: relative;
 }
 
-//Paramètres du gradient sur le svg coeur
+svg {
+  overflow: visible;
+  width: 30rem;
+}
+
 .svg_heart:hover path {
-  // fill: none;
-  // stroke: black;
   @include heart_animation;
 }
+
 @include heart_keyframes;
-
-

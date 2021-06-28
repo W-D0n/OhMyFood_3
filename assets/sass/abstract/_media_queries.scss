@@ -1,0 +1,42 @@
+//CREER DES MIXINS POUR LES MEDIAQUERIES
+//Sup à 1024 jusqu'à 1920
+$media_desk_high-res:'only screen and (max-width: 1920px)';
+
+//Écrans à très faible réso
+$media_desk_mid-res:'only screen and (min-width: 921px) and (max-width: 1024px)';
+
+//Tab orientée en portrait (non paramétré)
+$media_tab-res:'only screen and (min-width: 601px) and (max-width: 920px)';
+
+//Réso des mobiles
+$media_mobile-res:'only screen and (max-width: 600px)';
+
+
+//Modèle pour désactiver les animations
+// HTML
+
+// <div class="animation">boîte animée</div>
+
+// CSS
+
+// .animation {
+//   animation: vibrate 0.3s linear infinite both;
+// }
+
+// @media (prefers-reduced-motion: reduce) {
+//   .animation {
+//   animation: none;
+//   }
+// }
+
+// Syntaxes possibles par chris coyier
+//Applies styles when Reduced Motion is enabled
+// @media screen and (prefers-reduced-motion: reduce) {
+// }
+// @media (prefers-reduced-motion) {
+// }
+// Applies styles when the user has made no preference known 
+// @media screen and (prefers-reduced-motion: no-preference) {
+// }
+// @media not all and (prefers-reduced-motion) {
+// }

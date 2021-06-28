@@ -102,21 +102,13 @@
 @mixin heart_keyframes {
   @keyframes heart_anim {
     0% {
+      //fill: transparent;
       stroke-opacity: 1;
     }
     100% {
+      fill: $primaire;
       stroke-opacity: 0;
-      fill: url(#svg_gradient);
+      stroke-width: 0;
     }
-  }
-}
-@mixin heart_transition {
-  transition: heart_anim map-get($anim_duration, heart_anim)
-    map-get($anim_fct, heart_anim) map-get($anim_fill-mode, heart_anim)
-    map-get($anim_delay, heart_anim);
-}
-@mixin heart_transform {
-  &:hover {
-    fill: url(#svg_gradient);
   }
 }

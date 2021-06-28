@@ -188,10 +188,19 @@ i[class*=fav__heart] {
   width: 2rem;
   height: 2rem;
   cursor: pointer;
+  fill: transparent;
+  stroke: #363636;
+  stroke-width: 1px;
+  position: relative;
+}
+
+svg {
+  overflow: visible;
+  width: 30rem;
 }
 
 .svg_heart:hover path {
-  animation: heart_anim 1s ease-in-out forwards 100ms;
+  animation: heart_anim 1s ease-in-out forwards 80ms;
 }
 
 @keyframes heart_anim {
@@ -199,8 +208,9 @@ i[class*=fav__heart] {
     stroke-opacity: 1;
   }
   100% {
+    fill: #9256dc;
     stroke-opacity: 0;
-    fill: url(#svg_gradient);
+    stroke-width: 0;
   }
 }
 .loader {
