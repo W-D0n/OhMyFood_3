@@ -58,12 +58,13 @@
     map-get($anim_fct, transi_like-btn);
 }
 //Animation d'apparition du titre de type d'item menu
-@mixin fadein_title {
-  animation: t-fadein map-get($anim_duration, fadein_title)
-    map-get($anim_fct, fadein_title) map-get($anim_delay, fadein_title)
-    map-get($anim_fill-mode, fadein_title);
+@mixin animation_fadein_title {
+  animation: t-fadein map-get($anim_duration, animation_fadein_title)
+    map-get($anim_fct, animation_fadein_title)
+    map-get($anim_delay, animation_fadein_title)
+    map-get($anim_fill-mode, animation_fadein_title);
 }
-@mixin keyframes_title {
+@mixin keyframes_fadein_title {
   @keyframes t-fadein {
     0% {
       opacity: 0;
@@ -75,11 +76,12 @@
   }
 }
 //Animation d'apparition progressive des items de menu
-@mixin fadein_menu {
-  animation: m-fadein map-get($anim_duration, fadein_menu)
-    map-get($anim_fct, fadein_menu) map-get($anim_fill-mode, fadein_menu);
+@mixin animation_fadein_menu {
+  animation: m-fadein map-get($anim_duration, animation_fadein_menu)
+    map-get($anim_fct, animation_fadein_menu)
+    map-get($anim_fill-mode, animation_fadein_menu);
 }
-@mixin keyframes_menu {
+@mixin keyframes_fadein_menu {
   @keyframes m-fadein {
     0% {
       transform: translateY(100px);

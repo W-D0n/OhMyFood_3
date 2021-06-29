@@ -1,42 +1,38 @@
-//CREER DES MIXINS POUR LES MEDIAQUERIES
-//Sup à 1024 jusqu'à 1920
-$media_desk_high-res:'only screen and (max-width: 1920px)';
-
-//Écrans à très faible réso
-$media_desk_mid-res:'only screen and (min-width: 921px) and (max-width: 1024px)';
-
-//Tab orientée en portrait (non paramétré)
-$media_tab-res:'only screen and (min-width: 601px) and (max-width: 920px)';
-
-//Réso des mobiles
-$media_mobile-res:'only screen and (max-width: 600px)';
-
-
 //Modèle pour désactiver les animations
-// HTML
+@media screen and (prefers-reduced-motion: reduce) {
+  .loader,
+  .menu__type__title,
+  .menu__item,
+  path {
+    animation: none;
+  }
+}
 
-// <div class="animation">boîte animée</div>
+@mixin breakpoint($size) {
+  @media (min-width: map-get($breakpoints, $size)) {
+    @content; //@content : permet d'inclure les paramètres passés dans la partie entre {} de l'include appelé
+  }
+}
 
-// CSS
+@include breakpoint(md) {
+  .main-container {
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr auto;
+    column-gap: 1rem;
+  }
+  .restau__header {
+    grid-row: 1/2;
+    grid-column: 1/-1;
+  }
+}
 
-// .animation {
-//   animation: vibrate 0.3s linear infinite both;
-// }
-
-// @media (prefers-reduced-motion: reduce) {
-//   .animation {
-//   animation: none;
-//   }
-// }
-
-// Syntaxes possibles par chris coyier
-//Applies styles when Reduced Motion is enabled
-// @media screen and (prefers-reduced-motion: reduce) {
-// }
-// @media (prefers-reduced-motion) {
-// }
-// Applies styles when the user has made no preference known 
-// @media screen and (prefers-reduced-motion: no-preference) {
-// }
-// @media not all and (prefers-reduced-motion) {
-// }
+@include breakpoint(lg) {
+  .header,
+  .hero,
+  .main-container,
+  .header__logo,
+  .hero__restauimg,
+  .main__menu-container {
+    margin: 0 8%;
+  }
+}

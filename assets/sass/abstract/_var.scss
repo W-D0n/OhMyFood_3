@@ -43,10 +43,10 @@ $fontweight: (
 
 //Map breakpoints
 $breakpoints: (
-  phone: 360px,
-  phone-wide: 480px,
-  tab-portrait: 768px,
-  tab-landscape: 1024px,
-  desk: 1200px,
-  desk-wide: 1440,
+  xs: 0,
+  sm: 480px,
+  md: 640px,
+  lg: 980px,
+  xl: 1220px,
+  xxl: 1380px,
 );

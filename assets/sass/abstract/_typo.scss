@@ -1,0 +1,60 @@
+*[class*="title"] {
+  font-weight: map-get($fontweight, gras);
+}
+.nav__subtitle {
+  font-weight: map-get($fontweight, low);
+  color: $fontcolor-tertiaire;
+}
+.section__header {
+  font-weight: map-get($fontweight, gras);
+  font-size: 1.5rem;
+}
+.header__location {
+  color: $fontcolor-tertiaire;
+}
+.btn {
+  font-weight: map-get($fontweight, medium);
+  font-size: 1rem;
+  color: $fontcolor-primaire;
+}
+.backtoindex__arrow {
+  font-size: 1.2rem;
+}
+.restau__name {
+  font-family: $font_title;
+}
+.restau__badge-new {
+  color: $fontcolor-badge-new;
+}
+.card__title{
+  font-weight: map-get($fontweight, gras);
+}
+.menu__type__title {
+  font-size: 1.2rem;
+  text-transform: uppercase;
+}
+//zone d'animation des menus
+.menu__item {
+  &__title {
+    font-weight: map-get($fontweight, gras);
+    @include ellipsis;
+  }
+  &__price {
+    font-weight: map-get($fontweight, gras);
+  }
+  &__description {
+    @include ellipsis;
+  }
+  &__checkbox {
+    color: $fontcolor-primaire;
+  }
+}
+
+.foot__header {
+  font-family: $font_title;
+  font-size: 1.3rem;
+  color: $fontcolor-primaire;  
+}
+.foot__links__list {
+  color: $fontcolor-primaire;
+}

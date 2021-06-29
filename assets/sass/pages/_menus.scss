@@ -10,7 +10,12 @@
   grid-template-rows: repeat(3, auto);
   margin-top: -4rem;
   background-color: $bg-grey-lighter;
-  @include border_radius($top-left:2rem, $top-right:2rem, $bot-right:0, $bot-left:0);
+  @include border_radius(
+    $top-left: 2rem,
+    $top-right: 2rem,
+    $bot-right: 0,
+    $bot-left: 0
+  );
   z-index: 1;
 }
 .menu__header {
@@ -28,18 +33,16 @@
 
 .menu__type__title {
   position: relative;
-  font-size: 1.2rem;
-  text-transform: uppercase;
   padding-bottom: 0.5rem;
   visibility: hidden;
 
-  @include fadein_title;
-  @include keyframes_title;
+  @include animation_fadein_title;
+  @include keyframes_fadein_title;
 
   &::after {
     content: "";
-    @include element_position($position: absolute, $bot:0, $left:0);
-    @include width-height ($width:3rem, $height:0.2rem);
+    @include element_position($position: absolute, $bot: 0, $left: 0);
+    @include width-height($width: 3rem, $height: 0.2rem);
     background-color: $tertiaire;
   }
 }
@@ -60,11 +63,11 @@
   //Apparition des menus.
   @for $i from 1 through 5 {
     &:nth-child(#{$i}) {
-      animation-delay: $i * map-get($anim_delay, fadein_menu);
+      animation-delay: $i * map-get($anim_delay, animation_fadein_menu);
     }
   }
-  @include fadein_menu;
-  @include keyframes_menu;
+  @include animation_fadein_menu;
+  @include keyframes_fadein_menu;
 
   //Règles appliquées au survol (partie desk - onclick sur mobile)
   &:hover .menu__item__checkbox {
@@ -89,28 +92,23 @@
     transition: 400ms ease-in-out;
   }
   &__title {
-    font-weight: map-get($fontweight, gras);
-    @include ellipsis;
     margin: 0 0.3rem;
   }
   &__price {
-    font-weight: map-get($fontweight, gras);
     align-self: end;
     margin: 0.56rem 0.3rem;
     @include transi_menu-checkbox;
   }
   &__description {
-    @include ellipsis;
     margin: 0 0.3rem;
   }
   &__checkbox {
-    @include element_position($position: absolute, $top:0, $right:0);
+    @include element_position($position: absolute, $top: 0, $right: 0);
     display: flex;
     @include box_center;
-    @include width-height ($width:4rem, $height:100%);
+    @include width-height($width: 4rem, $height: 100%);
     border-radius: 0 20px 20px 0;
     background-color: $tertiaire;
-    color: $fontcolor-primaire;
     animation-fill-mode: both;
     @include transi_menu-checkbox;
     transform: translateX(100%);

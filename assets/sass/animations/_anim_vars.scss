@@ -5,8 +5,8 @@ $anim_duration: (
   animation_loader-stroke: 4s,//Animation du svg pour écrire le nom-logo
   transi_like-btn: 200ms, //Animation du btn like en forme de coeur
   transi_menu-checkbox: 400ms,//Animations d'apparition de la checkbox des menus
-  fadein_title: 1.5s,//Apparition du titre type de menu  
-  fadein_menu: 1.5s, //Apparition des cards de menu
+  animation_fadein_title: 1.5s,//Apparition du titre type de menu  
+  animation_fadein_menu: 1.5s, //Apparition des cards de menu
   heart_anim:1s //Animation survol des coeurs
 );
 $anim_fct: (
@@ -14,23 +14,23 @@ $anim_fct: (
   animation_loader-stroke: ease-out,
   transi_like-btn: ease-in,
   transi_menu-checkbox: ease-in-out,
-  fadein_title: linear,
-  fadein_menu: cubic-bezier(0.25, 0.46, 0.45, 0.94),
+  animation_fadein_title: linear,
+  animation_fadein_menu: cubic-bezier(0.25, 0.46, 0.45, 0.94),
   heart_anim:ease-in-out
 );
 $anim_delay: (
   animation_loader-stroke:300ms,
   transi_like-btn: 100ms,
   transi_menu-checkbox: 100ms,
-  fadein_title: 250ms,
-  fadein_menu: 200ms,
+  animation_fadein_title: 250ms,
+  animation_fadein_menu: 200ms,
   heart_anim: 80ms
 );
 $anim_fill-mode: (
   animation_loader-display: forwards,
   animation_loader-stroke: forwards,
-  fadein_title: forwards,
-  fadein_menu: forwards,
+  animation_fadein_title: forwards,
+  animation_fadein_menu: forwards,
   heart_anim:forwards
 );
 

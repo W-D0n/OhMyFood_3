@@ -1,4 +1,3 @@
-//head
 .header__logo {
   position: relative;
   display: flex;
@@ -11,20 +10,8 @@
   max-height: 2rem;
 }
 
-//Style pour les titres de sections en H2
 .section__header {
-  font-weight: map-get($fontweight, gras);
-  font-size: 1.5rem;
   margin: 1.5rem 0;
-}
-.restau__name {
-  font-family: $font_title;
-}
-
-//Retour à l'index
-.backtoindex__arrow {
-  @include element_position($position: absolute, $left: 1.2rem);
-  font-size: 1.2rem;
 }
 
 .header__location {
@@ -32,29 +19,26 @@
   @include box_center;
   background-color: $bg-grey-light;
   padding: 1rem;
-  color: $fontcolor-tertiaire;
 }
 
-.location {
-  font-weight: map-get($fontweight, medium);
-  
-  &__icon {
+.location__icon {
     margin-right: 0.8rem;
   }
-}
 
-//Hero
 .hero {
   text-align: center;
 }
-//nav
+
 .nav {
   background-color: $bg-grey-lighter;
   padding: 2rem;
 
   &__subtitle {
-  margin: 1rem 0;
-  font-weight: map-get($fontweight, low);
-  color: $fontcolor-tertiaire;
+    margin: 1rem 0;
   }
+}
+
+//Retour à l'index
+.backtoindex__arrow {
+  @include element_position($position: absolute, $left: 1.2rem);
 }
