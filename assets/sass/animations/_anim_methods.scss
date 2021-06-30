@@ -52,7 +52,7 @@
     map-get($anim_fct, transi_menu-checkbox)
     map-get($anim_delay, transi_menu-checkbox);
 }
-//Animation du btn like en forme de coeur
+//Animation du cta__btn like en forme de coeur
 @mixin transi_like-btn {
   transition: all map-get($anim_duration, transi_like-btn)
     map-get($anim_fct, transi_like-btn);
@@ -96,13 +96,14 @@
 }
 
 //Animation survol des coeurs
-@mixin heart_animation {
-  animation: heart_anim map-get($anim_duration, heart_anim)
-    map-get($anim_fct, heart_anim) map-get($anim_fill-mode, heart_anim)
-    map-get($anim_delay, heart_anim);
+@mixin animation_heart {
+  animation: animation_heart map-get($anim_duration, animation_heart)
+    map-get($anim_fct, animation_heart)
+    map-get($anim_fill-mode, animation_heart)
+    map-get($anim_delay, animation_heart);
 }
-@mixin heart_keyframes {
-  @keyframes heart_anim {
+@mixin keyframes_heart {
+  @keyframes animation_heart {
     0% {
       //fill: transparent;
       stroke-opacity: 1;
@@ -113,4 +114,8 @@
       stroke-width: 0;
     }
   }
+}
+// Animation survol des items de la liste fonctionnement
+@mixin transi_fctmt_items {
+  transition: all map-get($anim_duration, transi_fctmt_items);
 }

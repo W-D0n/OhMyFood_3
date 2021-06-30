@@ -1,0 +1,70 @@
+.nav {
+  text-align: center;
+  padding: 2rem;
+  background-color: $bg-grey-lighter;
+
+  &__header {
+    margin: 1.5rem 0;
+  }
+  &__subtitle {
+    margin: 1rem 0;
+  }
+}
+
+//Fonctionnement (fctmt)
+.fctmt {
+  padding: 2rem 1rem;
+
+  &__list {
+    @include display($display: grid, $r-gap: 1.1rem);
+    padding: 20px 0 20px 15px;
+    list-style-type: none;
+    //counter-reset: list__items; à supprimer si la config en mode grid fonctionne correctement dans les dispositions responsives
+
+    @include breakpoint(xl) {
+      grid-template-columns: repeat(3, auto);
+      column-gap: 1.5rem;
+    }
+  }
+
+  &__list__items {
+    position: relative;
+    border-radius: 1.25rem;
+    @include display(
+      $display: grid,
+      $r-gap: 1.11rem,
+      $c-gap: 1.11rem,
+      $justify: start,
+      $align: center
+    );
+    grid-template-columns: auto 1fr;
+    height: 4rem;
+    padding-left: 2.2rem;
+    box-shadow: 0.25rem 0.25rem 0.5rem rgba(0, 0, 0, 0.125);
+    background-color: $bg-grey-lighter;
+    transition: background-color 150ms;
+
+    &:hover {
+      background-color: $hover_prim_color;
+    }
+
+    @include breakpoint(xl) {
+      column-gap: 0.5rem;
+      //padding-left: 1.5rem;
+      //padding-right: 0.5rem;
+    }
+  }
+}
+.list__items__number {
+  @include element_position(
+    $position: absolute,
+    $top: unset,
+    $right: unset,
+    $bot: unset,
+    $left: -15px
+  );
+  @include display($display: flex, $justify: center, $align: center);
+  @include width-height($width: 1.6rem, $height: 1.6rem);
+  border-radius: 40px;
+  background-color: $primaire;
+}

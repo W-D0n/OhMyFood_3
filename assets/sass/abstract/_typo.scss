@@ -1,20 +1,28 @@
-*[class*="title"] {
+*[class*="title"],
+*[class*="header"],
+*[class*="name"],
+.restau__badge-new {
   font-weight: map-get($fontweight, gras);
 }
 .nav__subtitle {
   font-weight: map-get($fontweight, low);
   color: $fontcolor-tertiaire;
 }
-.section__header {
-  font-weight: map-get($fontweight, gras);
+.nav__header,
+.fctmt__header,
+.restau__header,
+.restau__name {
   font-size: 1.5rem;
 }
 .header__location {
   color: $fontcolor-tertiaire;
 }
-.btn {
+.cta__btn {
   font-weight: map-get($fontweight, medium);
   font-size: 1rem;
+  color: $fontcolor-primaire;
+}
+.list__items__number {
   color: $fontcolor-primaire;
 }
 .backtoindex__arrow {
@@ -26,7 +34,7 @@
 .restau__badge-new {
   color: $fontcolor-badge-new;
 }
-.card__title{
+.card__title {
   font-weight: map-get($fontweight, gras);
 }
 .menu__type__title {
@@ -53,7 +61,7 @@
 .foot__header {
   font-family: $font_title;
   font-size: 1.3rem;
-  color: $fontcolor-primaire;  
+  color: $fontcolor-primaire;
 }
 .foot__links__list {
   color: $fontcolor-primaire;

@@ -1,8 +1,11 @@
-.hero__restauimg {
-  object-fit: cover;
-  max-height: 15rem;
-  max-width: 100%;
+.hero__menu {
+  height: 15rem;
   width: 100%;
+}
+.hero__restauimg {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
 }
 .main__menu-container {
   position: relative;
@@ -21,16 +24,18 @@
 .menu__header {
   margin-bottom: 0; //annule le margin global des section__header
   padding: 2rem 2rem 2rem 1rem;
-  display: flex;
-  justify-content: space-between;
+  @include display($display: flex, $justify: space-between);
 }
-
+@include breakpoint(lg) {
+  .menu__container {
+    display: grid;
+    grid-template-columns: repeat(3, auto);
+  }
+}
 .menu__content {
-  display: grid;
-  gap: 1.11rem;
+  @include display($display: grid, $r-gap: 1.11rem);
   padding: 0 1rem 3rem 1rem;
 }
-
 .menu__type__title {
   position: relative;
   padding-bottom: 0.5rem;
@@ -48,11 +53,15 @@
 }
 .menu__item {
   position: relative;
-  display: grid;
-  @include box_center;
+  @include display(
+    $display: grid,
+    $r-gap: 1.11rem,
+    $c-gap: 1.11rem,
+    $justify: center,
+    $align: center
+  );
   height: 4rem;
   grid-template-columns: 1fr auto auto;
-  gap: 1.11rem;
   overflow: hidden;
   border-radius: 20px;
   box-shadow: 3px 4px 11px 5px rgba(0, 0, 0, 0.1);
@@ -76,16 +85,15 @@
   &:hover .menu__item__price {
     transform: translateX(-200%);
   }
-  &:hover .menu__item__header {
+  &:hover .menu__item__content {
     width: 70%;
   }
   &:hover .menu__item__icon {
     transform: rotate(0);
   }
 
-  &__header {
-    display: flex;
-    flex-direction: column;
+  &__content {
+    @include display($display: flex, $flex-dir: column);
     margin: 0 0.56rem;
     width: 100%;
     overflow: hidden;
@@ -96,7 +104,7 @@
   }
   &__price {
     align-self: end;
-    margin: 0.56rem 0.3rem;
+    margin: 0.56rem 1rem;
     @include transi_menu-checkbox;
   }
   &__description {
@@ -104,12 +112,10 @@
   }
   &__checkbox {
     @include element_position($position: absolute, $top: 0, $right: 0);
-    display: flex;
-    @include box_center;
+    @include display($display: flex, $justify: center, $align: center);
     @include width-height($width: 4rem, $height: 100%);
     border-radius: 0 20px 20px 0;
     background-color: $tertiaire;
-    animation-fill-mode: both;
     @include transi_menu-checkbox;
     transform: translateX(100%);
   }

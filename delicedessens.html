@@ -17,7 +17,7 @@
     <div class="wrap">
       <!--Container global-->
       <header class="header__logo">
-        <!-- Hero -->
+        <!-- hero__menu -->
         <a href="./index.html" class="backtoindex__arrow">
           <i class="fas fa-arrow-left"></i>
         </a>
@@ -27,17 +27,20 @@
           class="logo"
         />
       </header>
-      <img
-        class="hero__restauimg"
-        src="assets/img/4hansel.jpg"
-        alt="food in a plate"
-        class="restau__card_img"
-      />
+      <div class="hero__menu">
+        <img
+          class="hero__restauimg"
+          src="assets/img/4hansel.jpg"
+          alt="food in a plate"
+          class="restau__card_img"
+        />
+      </div>
+
       <main class="main__menu-container">
         <!-- Main -->
-        <header class="section__header menu__header">
+        <header class="menu__header">
           <h1 class="restau__name">Le délice des sens</h1>
-          <div class="btn_like">
+          <button class="cta__like">
             <svg
               class="svg_heart"
               xmlns="http://www.w3.org/2000/svg"
@@ -47,14 +50,14 @@
                 d="M3.172 5.172a4 4 0 015.656 0L10 6.343l1.172-1.171a4 4 0 115.656 5.656L10 17.657l-6.828-6.829a4 4 0 010-5.656z"
               />
             </svg>
-          </div>
+          </button>
         </header>
         <section class="menu__container">
           <section class="menu__content">
             <!--Entrées-->
             <span class="menu__type__title">Entrées</span>
             <section class="menu__item">
-              <header class="menu__item__header">
+              <header class="menu__item__content">
                 <h4 class="menu__item__title">Tartare de thon</h4>
                 <p class="menu__item__description">Assaisonné au yuzu</p>
               </header>
@@ -69,7 +72,7 @@
               </div>
             </section>
             <section class="menu__item">
-              <header class="menu__item__header">
+              <header class="menu__item__content">
                 <h4 class="menu__item__title">
                   Bouchée de homard croustillant
                 </h4>
@@ -88,7 +91,7 @@
               </div>
             </section>
             <section class="menu__item">
-              <header class="menu__item__header">
+              <header class="menu__item__content">
                 <h4 class="menu__item__title">Velouté de cèpes</h4>
                 <p class="menu__item__description">Aux truffes</p>
               </header>
@@ -107,7 +110,7 @@
             <!--Plats-->
             <span class="menu__type__title">Plats</span>
             <section class="menu__item">
-              <header class="menu__item__header">
+              <header class="menu__item__content">
                 <h4 class="menu__item__title">
                   Poulet rôti aux herbes de Provence
                 </h4>
@@ -124,7 +127,7 @@
               </div>
             </section>
             <section class="menu__item">
-              <header class="menu__item__header">
+              <header class="menu__item__content">
                 <h4 class="menu__item__title">Langouste rôtie</h4>
                 <p class="menu__item__description">Et ses légumes de saison</p>
               </header>
@@ -139,7 +142,7 @@
               </div>
             </section>
             <section class="menu__item">
-              <header class="menu__item__header">
+              <header class="menu__item__content">
                 <h4 class="menu__item__title">Côte de boeuf Angus</h4>
                 <p class="menu__item__description">Et sa purée de panais</p>
               </header>
@@ -158,7 +161,7 @@
             <!--Desserts-->
             <span class="menu__type__title">Desserts</span>
             <section class="menu__item">
-              <header class="menu__item__header">
+              <header class="menu__item__content">
                 <h4 class="menu__item__title">Farandole de desserts</h4>
                 <p class="menu__item__description">Du chef</p>
               </header>
@@ -173,7 +176,7 @@
               </div>
             </section>
             <section class="menu__item">
-              <header class="menu__item__header">
+              <header class="menu__item__content">
                 <h4 class="menu__item__title">Crème brulée</h4>
                 <p class="menu__item__description">Revisitée</p>
               </header>
@@ -188,7 +191,7 @@
               </div>
             </section>
             <section class="menu__item">
-              <header class="menu__item__header">
+              <header class="menu__item__content">
                 <h4 class="menu__item__title">Tiramisu</h4>
                 <p class="menu__item__description">À la noisette</p>
               </header>
@@ -204,8 +207,8 @@
             </section>
           </section>
         </section>
-        <section class="btn_command">
-          <button class="btn" type="button">Commander</button>
+        <section class="cta__command">
+          <button class="cta__btn" type="button">Commander</button>
         </section>
       </main>
       <footer class="footer wrap">

@@ -1,43 +1,25 @@
 .header__logo {
   position: relative;
-  display: flex;
-  @include box_center;
-  box-shadow: 0 0 0.5rem rgba(0, 0, 0, 0.25);
+  @include display ($display:flex, $justify:center, $align:center);
+  // box-shadow: offset-x | offset-y | blur-radius | color
+  box-shadow: 0 4px 6px -6px rgba(0, 0, 0, 0.25);
   padding: 1rem 0;
   height: 5rem;
 }
+
 .logo {
   max-height: 2rem;
 }
 
-.section__header {
-  margin: 1.5rem 0;
-}
-
 .header__location {
-  display: flex;
-  @include box_center;
+  @include display ($display:flex, $justify:center, $align:center);
   background-color: $bg-grey-light;
   padding: 1rem;
 }
 
 .location__icon {
-    margin-right: 0.8rem;
-  }
-
-.hero {
-  text-align: center;
+  margin-right: 0.8rem;
 }
-
-.nav {
-  background-color: $bg-grey-lighter;
-  padding: 2rem;
-
-  &__subtitle {
-    margin: 1rem 0;
-  }
-}
-
 //Retour à l'index
 .backtoindex__arrow {
   @include element_position($position: absolute, $left: 1.2rem);

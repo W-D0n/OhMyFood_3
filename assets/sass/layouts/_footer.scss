@@ -1,7 +1,6 @@
 // Footer
 .footer {
-  display: flex;
-  flex-direction: column;
+  @include display($display: flex, $flex-dir: column);
   padding: 1.5rem 2rem;
   background-color: $bg-foot;
 }
@@ -9,8 +8,7 @@
   margin-bottom: 1.2rem;
 }
 .foot__links__list {
-  display: flex;
-  flex-direction: column;
+  @include display($display: flex, $flex-dir: column);
 
   &__icon {
     width: 1.2rem;
@@ -18,8 +16,7 @@
 }
 
 .foot__links {
-  display: flex;
-  align-items: center;
+  @include display($display: flex, $flex-dir: center);
 
   > i {
     flex-basis: 2em; //basis pour définir la width du premier élément.

@@ -8,7 +8,15 @@
   overflow: hidden;
   text-overflow: ellipsis;
 }
-
+@mixin display ($display, $r-gap:unset, $c-gap:unset, $justify:unset, $align:unset, $flex-dir:unset){
+  display: $display;
+  flex-direction: $flex-dir;
+  row-gap: $r-gap;
+  column-gap: $c-gap;
+  justify-content: $justify;
+  align-items: $align;
+  //@include display ($display, $r-gap:unset, $c-gap:unset, $justify:unset, $align:unset, $flex-dir:unset);
+}
 @mixin element_position($position, $top:unset, $right:unset, $bot:unset, $left:unset){
   position: $position;
   top: $top;
@@ -17,6 +25,11 @@
   left: $left;
   //@include element_position($position, $top:unset, $right:unset, $bot:unset, $left:unset);
 }
+@mixin width-height ($width:unset, $height:unset){
+  width: $width;
+  height: $height;
+  //@include width-height ($width:unset, $height:unset);
+}
 @mixin border_radius($global-radius:unset, $top-left:unset, $top-right:unset, $bot-right:unset, $bot-left:unset){
   border-radius:$global-radius;
   border-top-left-radius: $top-left;
@@ -24,11 +37,6 @@
   border-bottom-right-radius: $bot-right;
   border-bottom-left-radius: $bot-left;
   //@include border_radius($top-left:0, $top-right:0, $bot-right:0, $bot-left:0);
-}
-@mixin width-height ($width:unset, $height:unset){
-  width: $width;
-  height: $height;
-  //@include width-height ($width:unset, $height:unset);
 }
 
 //Fonctions pour chaque breakpoints utiliser la valeur de la variable correspondante contenue dans la map $breakpoints

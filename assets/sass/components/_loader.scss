@@ -1,8 +1,7 @@
 .loader {
   position: fixed;
-  display: inline-flex;
+  @include display ($display: inline-flex, $justify:center, $align:center);
   @include width-height ($width:100vw, $height:100vh);
-  @include box_center;
   background-color: $bg-primaire;
   z-index: 1;
   @include animation_loader-display;

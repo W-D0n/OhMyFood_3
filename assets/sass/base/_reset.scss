@@ -37,12 +37,20 @@ h6 {
 ol,
 ul,
 li {
- list-style:none
+  list-style: none;
 }
-button,
 input,
 select {
   margin: 0;
+}
+button {
+  margin: 0;
+  padding: 0;
+  border: none;
+  font-size: 100%;
+  font-family: inherit;
+  cursor: pointer;
+  background-color: transparent;
 }
 html {
   box-sizing: border-box;

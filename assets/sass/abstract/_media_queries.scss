@@ -13,26 +13,3 @@
     @content; //@content : permet d'inclure les paramètres passés dans la partie entre {} de l'include appelé
   }
 }
-
-@include breakpoint(md) {
-  .main-container {
-    grid-template-columns: 1fr 1fr;
-    grid-template-rows: 1fr auto;
-    column-gap: 1rem;
-  }
-  .restau__header {
-    grid-row: 1/2;
-    grid-column: 1/-1;
-  }
-}
-
-@include breakpoint(lg) {
-  .header,
-  .hero,
-  .main-container,
-  .header__logo,
-  .hero__restauimg,
-  .main__menu-container {
-    margin: 0 8%;
-  }
-}

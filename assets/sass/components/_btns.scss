@@ -1,31 +1,25 @@
-//Style des boutons
-.btn {
+//Style global des boutons
+.cta__btn {
   border: 0;
   border-radius: $btn-bord-radius;
   padding: 1rem 1.5rem;
-  cursor: pointer;
   background-image: linear-gradient($secondaire, $primaire);
   box-shadow: 0.25rem 0.25rem 1.8rem rgba(0, 0, 0, 0.25);
   @include transi_like-btn;
-    &:hover {
-      opacity: 0.8;
-    }
-    &:active {
-      transform: scale(0.99);
-    }
+  &:hover {
+    opacity: 0.8;
+  }
 }
-.btn_command {
+.cta__command {
   margin: 2rem auto 3rem auto;
 }
 //Icone de coeur favoris
 i[class*="fav__heart"] {
   cursor: pointer;
 }
-.btn_like {
-  display: flex;
-  @include box_center;
+.cta__like {
+  @include display ($display: flex, $justify:center, $align:center);
   @include width-height($width: 2rem, $height: 2rem);
-  cursor: pointer;
   fill: transparent;
   stroke: $fontcolor-secondaire;
   stroke-width: 1px;
@@ -36,6 +30,6 @@ svg {
   width: 30rem;
 }
 .svg_heart:hover path {
-  @include heart_animation;
+  @include animation_heart;
 }
-@include heart_keyframes;
+@include keyframes_heart;
