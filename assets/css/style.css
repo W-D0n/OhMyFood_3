@@ -159,6 +159,10 @@ html {
   color: white;
 }
 
+.fctmt__list__icon {
+  color: #7d7d7d;
+}
+
 .backtoindex__arrow {
   font-size: 1.2rem;
 }
@@ -322,7 +326,7 @@ svg {
   height: 100vh;
   background-color: white;
   z-index: 1;
-  animation: animation_loader-display 0s ease-out forwards;
+  animation: animation_loader-display 4s ease-out forwards;
 }
 
 .loader__container {
@@ -605,6 +609,7 @@ svg {
   .menu__container {
     display: grid;
     grid-template-columns: repeat(3, auto);
+    align-items: baseline;
   }
 }
 
