@@ -4,11 +4,11 @@
 .restau__badge-new {
   font-weight: map-get($fontweight, gras);
 }
-.nav__subtitle {
+.hero__subheader {
   font-weight: map-get($fontweight, low);
   color: $fontcolor-tertiaire;
 }
-.nav__header,
+.hero__header,
 .fctmt__header,
 .restau__header,
 .restau__name {

@@ -1,6 +1,5 @@
 /*Valeurs communes à tout le site*/
 @import url("https://fonts.googleapis.com/css2?family=Roboto&family=Shrikhand&display=swap");
-
 //Polices de caractères
 $font_title: Shrikhand, "cursive";
 $font_text: Roboto, "sans-serrif";
@@ -38,12 +37,12 @@ $bg-foot: hsla(0, 0%, 22%, 1);
 $fontweight: (
   gras: 800,
   medium: 500,
-  low: 400,
+  low: 400
 );
 
 //Map breakpoints
 $breakpoints: (
   md: 640px,
   lg: 980px,
-  xl: 1024px,
+  xl: 1024px
 );

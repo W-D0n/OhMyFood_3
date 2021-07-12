@@ -1,13 +1,3 @@
-//Modèle pour désactiver les animations
-@media screen and (prefers-reduced-motion: reduce) {
-  .loader,
-  .menu__type__title,
-  .menu__item,
-  path {
-    animation: none;
-  }
-}
-
 @mixin breakpoint($size) {
   @media (min-width: map-get($breakpoints, $size)) {
     @content; //@content : permet d'inclure les paramètres passés dans la partie entre {} de l'include appelé

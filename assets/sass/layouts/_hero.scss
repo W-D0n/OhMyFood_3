@@ -1,4 +1,4 @@
-.nav {
+.hero {
   text-align: center;
   padding: 2rem;
   background-color: $bg-grey-lighter;
@@ -6,7 +6,7 @@
   &__header {
     margin: 1.5rem 0;
   }
-  &__subtitle {
+  &__subheader {
     margin: 1rem 0;
   }
 }

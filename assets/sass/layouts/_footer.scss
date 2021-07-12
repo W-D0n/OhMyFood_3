@@ -16,7 +16,7 @@
 }
 
 .foot__links {
-  @include display($display: flex, $flex-dir: center);
+  @include display($display: flex, $align: center);
 
   > i {
     flex-basis: 2em; //basis pour définir la width du premier élément.

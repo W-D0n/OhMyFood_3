@@ -69,6 +69,8 @@
   cursor: pointer;
   background-color: $bg-primaire;
   visibility: hidden;
+  opacity: 0;
+  transform: translateY(100px);
 
   //Apparition des menus.
   @for $i from 1 through 5 {

@@ -8,6 +8,7 @@
   @include transi_like-btn;
   &:hover {
     opacity: 0.8;
+    transform: scale(1.01);
   }
 }
 .cta__command {
@@ -23,7 +24,6 @@ i[class*="fav__heart"] {
   fill: transparent;
   stroke: $fontcolor-secondaire;
   stroke-width: 1px;
-  position: relative;
 }
 svg {
   overflow: visible;

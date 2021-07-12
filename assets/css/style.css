@@ -100,15 +100,6 @@ html {
   font-family: Roboto, "sans-serrif";
 }
 
-@media screen and (prefers-reduced-motion: reduce) {
-  .loader,
-  .menu__type__title,
-  .menu__item,
-  path {
-    animation: none;
-  }
-}
-
 .wrapper {
   margin: 0.7rem;
 }
@@ -124,6 +115,12 @@ html {
   display: block;
   background-color: white;
   border-radius: 1rem;
+  box-shadow: 0.25rem 0.25rem 0.5rem rgba(0, 0, 0, 0.125);
+}
+
+.restau__card_wrapper:hover {
+  transition: all 0.1s;
+  transform: scale(1.01);
 }
 
 *[class*="title"],
@@ -133,12 +130,12 @@ html {
   font-weight: 800;
 }
 
-.nav__subtitle {
+.hero__subheader {
   font-weight: 400;
   color: #292929;
 }
 
-.nav__header,
+.hero__header,
 .fctmt__header,
 .restau__header,
 .restau__name {
@@ -269,6 +266,7 @@ html {
 
 .cta__btn:hover {
   opacity: 0.8;
+  transform: scale(1.01);
 }
 
 .cta__command {
@@ -291,7 +289,6 @@ i[class*="fav__heart"] {
   fill: transparent;
   stroke: #363636;
   stroke-width: 1px;
-  position: relative;
 }
 
 svg {
@@ -421,17 +418,17 @@ svg {
   left: 1.2rem;
 }
 
-.nav {
+.hero {
   text-align: center;
   padding: 2rem;
   background-color: whitesmoke;
 }
 
-.nav__header {
+.hero__header {
   margin: 1.5rem 0;
 }
 
-.nav__subtitle {
+.hero__subheader {
   margin: 1rem 0;
 }
 
@@ -558,11 +555,11 @@ svg {
 
 .foot__links {
   display: flex;
-  flex-direction: center;
+  flex-direction: unset;
   row-gap: unset;
   column-gap: unset;
   justify-content: unset;
-  align-items: unset;
+  align-items: center;
 }
 
 .foot__links > i {
@@ -668,6 +665,8 @@ svg {
   cursor: pointer;
   background-color: white;
   visibility: hidden;
+  opacity: 0;
+  transform: translateY(100px);
   animation: m-fadein 1.5s cubic-bezier(0.25, 0.46, 0.45, 0.94) forwards;
 }
 

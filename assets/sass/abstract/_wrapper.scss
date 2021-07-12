@@ -14,4 +14,9 @@
   display: block;
   background-color: $bg-primaire;
   border-radius: $card-bord-radius;
+  box-shadow: 0.25rem 0.25rem 0.5rem rgba(0, 0, 0, 0.125);
+  &:hover{
+    transition: all 0.1s;
+    transform: scale(1.01);
+  }
 }

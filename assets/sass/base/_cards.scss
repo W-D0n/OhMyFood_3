@@ -3,7 +3,7 @@
   height: 11rem;
   border-radius: $card-bord-radius;
   overflow: hidden;
-  border-radius: $card-bord-radius $card-bord-radius 0 0;
+  border-radius: $card-bord-radius $card-bord-radius 0 0;  
 }
 .restau__card_img {
   width: 100%;
@@ -19,6 +19,7 @@
 }
 .card__footer {
   display: flex;
+  // justify-content: space-between;
   padding: 0.5rem;
 }
 .card__footcontent {
