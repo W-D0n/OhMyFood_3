@@ -24,8 +24,7 @@
 ### Assets
 - Brief : [Pdf](https://s3.eu-west-1.amazonaws.com/course.oc-static.com/projects/Front-End+V2/P3+CSS+animations/DW+P3+-+Brief+creatif+-+Ohmyfood!.pdf)
 - Mockup : [Image](https://s3-eu-west-1.amazonaws.com/course.oc-static.com/projects/DW_P3/Maquettes%20Ohmyfood.zip)
-### Dependencies
-- 
+
 ### Getting Started
 Clone the repo : `git clone https://github.com/W-Kamal/OhMyFood_3.git`  
 Install dependencies : `pnpm* install`  
